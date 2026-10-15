@@ -1,0 +1,613 @@
+{
+ "trip": {
+  "dates": "11.21(토) – 11.22(일) · 1박",
+  "people": 9
+ },
+ "stays": [
+  {
+   "source": "search",
+   "type": "mountain",
+   "lat": 37.6768813917746,
+   "lng": 128.794675238965,
+   "status": "ok",
+   "oceanView": false,
+   "seaNote": "성산먹거리촌 차량 12분",
+   "rooms": {
+    "bedrooms": null,
+    "bathrooms": null,
+    "bathroomNote": "침대 3개, 에어컨 5대 · 방/화장실 수 확인 필요",
+    "living": true,
+    "pyeong": null
+   },
+   "parking": "무료 주차",
+   "distSea": 17027,
+   "distStore": 3692,
+   "checkin": "15:00",
+   "checkout": "11:00",
+   "heating": null,
+   "reviewSummary": "리뷰 8개 · 평점 10. 동아리 MT 9명 후기 있음: 거실이 넓고 방음 걱정 없이 놀 수 있다는 평. 사장님 친절, 항아리 바비큐·비어치킨 호평. 겨울에도 난방 미리 준비해 주셨다는 후기.",
+   "photos": [
+    "https://image.withstatic.com/68/368/312/071c011896b04104b28873ead16dd48e.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/185/452/470/52ed9d0e12324308b16c25b2714b69ca.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/318/65/85/3284f922dbe34bceba4e6fe791c5577a.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/61/244/492/1633795ee21e44a4aac40b221eedca55.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/451/317/204/148291b7c4f44df58b7f78399e10b668.jpg?width=1280&height=1024&format=webp"
+   ],
+   "contact": null,
+   "check": [
+    "방·화장실 개수",
+    "9명 추가요금 최종 총액",
+    "바비큐 이용시간 (21시 이후 가능한지)"
+   ],
+   "pros": [
+    "노래방 기계 · 빔프로젝터 · LP · 벽난로",
+    "실내 수영장 (냉난방, 미온수 5만원)",
+    "배럴 사우나 (3만원)",
+    "600평 마당 · 근처에 민가 없음, 밤새 가능",
+    "바비큐 (숯·가스·연탄 각 3만원)",
+    "사장님 직접 요리 메뉴 (비어치킨·항아리바베큐)"
+   ],
+   "cons": [
+    "가격 높음 (9명 약 64만원 추정)",
+    "산속이라 시내·편의점 멀음 (먹거리촌 차 12분)",
+    "객실 내 육류·튀김·생선 조리 불가",
+    "22시 이후 입실은 사전 문의",
+    "바비큐 이용 15:00~21:00 안내"
+   ],
+   "id": "themountain",
+   "name": "강릉 더마운틴펜션",
+   "area": "강릉시 왕산면 왕산리 546",
+   "address": "강원특별자치도 강릉시 왕산면 왕산리 546",
+   "price": {
+    "total": 640000,
+    "estimated": true,
+    "note": "객실 490,000(기준 4인) + 추가 5명×30,000 · 현장 결제"
+   },
+   "capacity": {
+    "base": 4,
+    "max": 12
+   },
+   "url": "https://www.yeogi.com/domestic-accommodations/75477?checkIn=2026-11-21&checkOut=2026-11-22&personal=9",
+   "nearestBeach": "송정해변",
+   "nearestStore": "CU 대관령휴게소점",
+   "sources": [
+    {
+     "label": "여기어때 상세 (가격·시설·후기)",
+     "url": "https://www.yeogi.com/domestic-accommodations/75477?checkIn=2026-11-21&checkOut=2026-11-22&personal=9"
+    }
+   ],
+   "checkedAt": "2026-10-15"
+  },
+  {
+   "source": "search",
+   "type": "sea",
+   "lat": 37.6488766147395,
+   "lng": 129.04442712698,
+   "status": "ok",
+   "oceanView": true,
+   "seaNote": "금진해변 차량 3분",
+   "rooms": {
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "bathroomNote": "후기 기준 (스윗룸 501) · 확인 필요",
+    "living": true,
+    "pyeong": null
+   },
+   "parking": "건물 1층 주차장 (지붕 있음)",
+   "distSea": 1102,
+   "distStore": 638,
+   "checkin": "15:00",
+   "checkout": "11:00",
+   "heating": null,
+   "reviewSummary": "리뷰 98개 · 평점 9.6. 청결 칭찬이 가장 많음 (곰팡이·냄새 없음). 사장님 친절, 베란다에서 보는 바다 뷰 만족. 세련된 느낌보다는 대가족이 편히 지내기 좋다는 평.",
+   "photos": [
+    "https://image.withstatic.com/property/2025/06/27/b8/b880c7e443644f1b8fbf123399651868.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/property/2025/06/27/51/51036ced057c4804aa945582c0136236.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/property/2025/06/27/97/973eff2402f8473494f9173c79b0c2c5.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/property/2025/06/27/c4/c4b820b9efa54c36a0987b8e936ad5b0.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/property/2025/06/27/40/404d54ce9db1429c9809809b94d6022c.jpg?width=1280&height=1024&format=webp"
+   ],
+   "contact": null,
+   "check": [
+    "스윗룸 최종 총액 (추가인원 포함)",
+    "노래방/놀거리 유무",
+    "방 구성 (침실 3·화장실 2)"
+   ],
+   "pros": [
+    "전 객실 오션뷰 · 일출/노을",
+    "1층 야외 테라스 바비큐 (숯+그릴 1세트 3만원)",
+    "청결 평가 매우 높음",
+    "엘리베이터 있음"
+   ],
+   "cons": [
+    "노래방 정보 없음",
+    "바비큐 우선예약제 · 날씨에 따라 불가",
+    "객실 내 육류·튀김·생선 조리 불가",
+    "가파른 길로 올라가는 위치"
+   ],
+   "id": "solay",
+   "name": "강릉 쏠레이빌리지 (스윗룸)",
+   "area": "강릉시 옥계면 금진리 150-42",
+   "address": "강원특별자치도 강릉시 옥계면 금진리 150-42",
+   "price": {
+    "total": 400000,
+    "estimated": true,
+    "note": "스윗룸 300,000(기준 4인) + 추가 5명×20,000 · 현장 결제"
+   },
+   "capacity": {
+    "base": 4,
+    "max": 10
+   },
+   "url": "https://www.yeogi.com/domestic-accommodations/85780?checkIn=2026-11-21&checkOut=2026-11-22&personal=9",
+   "nearestBeach": "금진해변",
+   "nearestStore": "GS25 강릉금진항점",
+   "sources": [
+    {
+     "label": "여기어때 상세 (가격·시설·후기)",
+     "url": "https://www.yeogi.com/domestic-accommodations/85780?checkIn=2026-11-21&checkOut=2026-11-22&personal=9"
+    }
+   ],
+   "checkedAt": "2026-10-15"
+  },
+  {
+   "source": "search",
+   "type": null,
+   "lat": 37.3580878959933,
+   "lng": 129.248153038185,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "rooms": {
+    "bedrooms": null,
+    "bathrooms": null,
+    "bathroomNote": null,
+    "living": true,
+    "pyeong": 70
+   },
+   "parking": "무료 주차",
+   "distSea": 523,
+   "distStore": 3074,
+   "checkin": "14:00",
+   "checkout": "11:00",
+   "heating": null,
+   "reviewSummary": "리뷰 2개뿐이라 요약이 어려워요. 한쪽은 '모든 면에서 완벽'(본관), 한쪽은 3년 전 독채 청소 불만. 사장님 친절하다는 언급.",
+   "photos": [
+    "https://image.withstatic.com/318/388/365/f549a80b8f824670a7b1686115baec22.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/498/81/424/71c0a74b8e214a698fb804f9a888764e.jpeg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/88/277/216/9ca06ad80e0a4a4a8e85087a6cad70a3.jpeg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/327/278/94/782438a74adc4ff6b87ab4b2426275e9.jpeg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/62/138/389/0ddffd36ff9848dbaaa8eef621c5b547.jpg?width=1280&height=1024&format=webp"
+   ],
+   "contact": null,
+   "check": [
+    "방·화장실 개수",
+    "바비큐·세미나실 비용 합산",
+    "바다까지 거리",
+    "다른 객실(겔러리하우스 44만, 별관 45만)도 비교"
+   ],
+   "pros": [
+    "70평 오픈형 본관 · 라운지/세미나실",
+    "노래방 + 그랜드피아노·앰프 (2시간 10만원)",
+    "객실 내 취사 가능",
+    "카페·미술관 병설 · 야외 난로"
+   ],
+   "cons": [
+    "후기 2개뿐 (신뢰도 낮음)",
+    "바비큐 1인당 5만원 코스 (9명이면 약 45만원)",
+    "세미나실 이용료 별도 (기본 20만원/4시간)",
+    "강릉에서 멀음 (삼척)"
+   ],
+   "id": "misulgwan",
+   "name": "삼척 미술관 스테이 (본관)",
+   "area": "삼척시 근덕면 부남리 121",
+   "address": "강원특별자치도 삼척시 근덕면 부남리 121",
+   "price": {
+    "total": 500000,
+    "estimated": true,
+    "note": "본관 480,000(기준 8인) + 추가 1명×20,000 · 현장 결제"
+   },
+   "capacity": {
+    "base": 8,
+    "max": 15
+   },
+   "url": "https://www.yeogi.com/domestic-accommodations/72158?checkIn=2026-11-21&checkOut=2026-11-22&personal=9",
+   "nearestBeach": "부남해변",
+   "nearestStore": "GS25 삼척근덕중앙점",
+   "sources": [
+    {
+     "label": "여기어때 상세 (가격·시설·후기)",
+     "url": "https://www.yeogi.com/domestic-accommodations/72158?checkIn=2026-11-21&checkOut=2026-11-22&personal=9"
+    }
+   ],
+   "checkedAt": "2026-10-15"
+  },
+  {
+   "source": "search",
+   "type": "sea",
+   "lat": 37.5787380885084,
+   "lng": 129.112462367992,
+   "status": "ok",
+   "oceanView": true,
+   "seaNote": "대진해수욕장 차량 2분",
+   "rooms": {
+    "bedrooms": null,
+    "bathrooms": null,
+    "bathroomNote": "'욕실이 넓다'는 후기 있음 · 개수 확인 필요",
+    "living": null,
+    "pyeong": null
+   },
+   "parking": "무료 주차",
+   "distSea": 380,
+   "distStore": 204,
+   "checkin": "15:00",
+   "checkout": "11:00",
+   "heating": null,
+   "reviewSummary": "리뷰 6개 · 평점 8.3. 사장님 친절·바비큐 세심하게 챙겨줌, 침구 깔끔, 방음 좋음. 반면 '연식이 있어 신식 펜션을 기대하면 아쉬울 수 있다'는 후기. 해수욕장·기차 뷰.",
+   "photos": [
+    "https://image.withstatic.com/110/452/222/a98962767f37437889d03b7a5a4637e9.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/50/498/389/8a44caa2e13f4f1fa328a3caf5f5cf49.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/369/53/78/a5929d45089c45feadb0b232de8f31e3.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/458/9/10/28b208bf4048420ea6e1aaa5a302a2f5.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/32/495/396/5ea097c4dd044257949adf7c8e5daef9.jpg?width=1280&height=1024&format=webp"
+   ],
+   "contact": null,
+   "check": [
+    "방·화장실 개수",
+    "B/C동 구조",
+    "9명 최종 총액"
+   ],
+   "pros": [
+    "오션뷰 · 언덕 위 데크에서 해돋이",
+    "공용 바비큐장 + 숯그릴 3만원 (4인 기준)",
+    "객실 내 취사 가능",
+    "침구 깨끗 · 방음 좋다는 후기"
+   ],
+   "cons": [
+    "연식 있는 통나무집 스타일",
+    "언덕 위 위치",
+    "강릉에서 멀음 (동해)",
+    "수건이 없어 요청해야 했다는 후기"
+   ],
+   "id": "donghae-twin",
+   "name": "동해 트윈펜션 (B·C동)",
+   "area": "동해시 대진동 25",
+   "address": "강원특별자치도 동해시 대진동 25",
+   "price": {
+    "total": 380000,
+    "estimated": true,
+    "note": "B/C동 350,000(기준 8인) + 추가 1명×30,000 · 현장 결제"
+   },
+   "capacity": {
+    "base": 8,
+    "max": 10
+   },
+   "url": "https://www.yeogi.com/domestic-accommodations/82795?checkIn=2026-11-21&checkOut=2026-11-22&personal=9",
+   "nearestBeach": "대진해변",
+   "nearestStore": "세븐일레븐 동해대진비치점",
+   "sources": [
+    {
+     "label": "여기어때 상세 (가격·시설·후기)",
+     "url": "https://www.yeogi.com/domestic-accommodations/82795?checkIn=2026-11-21&checkOut=2026-11-22&personal=9"
+    }
+   ],
+   "checkedAt": "2026-10-15"
+  },
+  {
+   "id": "sunstay",
+   "name": "삼척 썬스테이 펜션",
+   "source": "search",
+   "area": "삼척시 교동 387-2",
+   "type": "sea",
+   "oceanView": null,
+   "lat": 37.4640132044734,
+   "lng": 129.173116553638,
+   "status": "ok",
+   "approx": false,
+   "address": "강원특별자치도 삼척시 교동 387-2",
+   "seaNote": null,
+   "price": {
+    "total": 350000,
+    "estimated": true,
+    "note": "객실 250,000(기준 4인) + 추가 5명×20,000 · 현장 결제"
+   },
+   "rooms": {
+    "bedrooms": null,
+    "bathrooms": null,
+    "bathroomNote": "서비스 목록에 '공용화장실' 표기 → 전용 화장실 여부 확인 필요",
+    "living": null,
+    "pyeong": null
+   },
+   "capacity": {
+    "base": 4,
+    "max": 10
+   },
+   "parking": "주차 가능",
+   "distSea": 218,
+   "distStore": 138,
+   "checkin": "15:00",
+   "checkout": "11:00",
+   "heating": null,
+   "pros": [
+    "삼척해변 도보 2분 · 독채 (한 팀만 이용)",
+    "객실 내 취사 가능 · 주방/전자레인지",
+    "바비큐 가능 (펜션 문의)",
+    "편의점 있음 (시설 목록)"
+   ],
+   "cons": [
+    "후기 없음",
+    "객실 내 육류·튀김·생선 조리 불가",
+    "'공용화장실' 표기 — 확인 필요"
+   ],
+   "reviewSummary": null,
+   "photos": [
+    "https://image.withstatic.com/property/2026/07/29/d1/d14570f4d6a049cb96cc1e1a1b022355.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/property/2026/07/29/f8/f8804c2208f540a28b593962b813993c.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/property/2026/07/29/97/97cce42ba2db4f4cb300b24d42962896.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/property/2026/04/24/18/1859b8bbc50a4739a00caed57559a2ec.jpeg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/property/2026/04/24/49/49b5c5b45147444dbc14e00d9ce336dd.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/property/2026/04/24/8d/8d399d314e73402a982a853e72b89905.jpg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/giant/2026/05/04/32/323754a923ad4d3ab71c69b9da8ab4cf.jpeg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/giant/2026/05/04/52/524e0be13ea6443d807b13dfe5967eb4.jpeg?width=1280&height=1024&format=webp",
+    "https://image.withstatic.com/giant/2026/05/04/aa/aae21f86bc414851ae66168b38e976ca.jpeg?width=1280&height=1024&format=webp"
+   ],
+   "url": "https://www.yeogi.com/domestic-accommodations/90665?checkIn=2026-11-21&checkOut=2026-11-22&personal=9",
+   "contact": null,
+   "check": [
+    "화장실 개수·전용 여부",
+    "방 구성",
+    "최종 총액 (추가인원)"
+   ],
+   "sources": [
+    {
+     "label": "여기어때 상세 (가격·시설)",
+     "url": "https://www.yeogi.com/domestic-accommodations/90665?checkIn=2026-11-21&checkOut=2026-11-22&personal=9"
+    }
+   ],
+   "checkedAt": "2026-10-15",
+   "nearestBeach": "작은후진해변",
+   "nearestStore": "세븐일레븐 삼척새천년비치점"
+  },
+  {
+   "id": "buyeon-c",
+   "name": "부연스카이케빈 C동",
+   "source": "search",
+   "area": "강릉시 연곡면 부연동길 840",
+   "type": "mountain",
+   "lat": 37.8714413488431,
+   "lng": 128.634558556717,
+   "status": "ok",
+   "price": {
+    "total": 410000,
+    "note": "숙박 400,000 + 추가 1명 10,000"
+   },
+   "rooms": {
+    "bedrooms": 2,
+    "bathrooms": null,
+    "bathroomNote": "네이버 욕실 2 / 공식 홈페이지 화장실 1 → 확인 필요",
+    "living": null,
+    "pyeong": 28
+   },
+   "capacity": {
+    "base": 8,
+    "max": 12
+   },
+   "parking": null,
+   "distSea": 15193,
+   "distStore": 6748,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "pros": [
+    "독채 28평",
+    "바비큐 가능 (숯·드럼·석쇠 3인 기본 2만원)",
+    "노래방 시설 (시간당 2만원)"
+   ],
+   "cons": [
+    "노래방은 객실 밖 별도 시설 · 사전예약 · 밤 10시까지",
+    "9인 바비큐 총요금 미확인",
+    "산속이라 편의점 멀 수 있음"
+   ],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://m.booking.naver.com/booking/3/bizes/169383/items/3209763?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": "010-5253-5552",
+   "check": [
+    "욕실·화장실 개수 (남녀 동시 샤워 가능?)",
+    "9인 바비큐 총요금",
+    "노래방 이용시간 확보"
+   ],
+   "address": "강원 강릉시 연곡면 부연동길 840",
+   "nearestBeach": "큰바다해수욕장",
+   "nearestStore": "이마트24 R강릉소금강점",
+   "sources": [
+    {
+     "label": "네이버 예약 (가격)",
+     "url": "https://m.booking.naver.com/booking/3/bizes/169383/items/3209763?startDate=2026-11-21&endDate=2026-11-22"
+    },
+    {
+     "label": "공식 홈페이지 (객실 설명)",
+     "url": "http://skycabin-camp.com/room6.html"
+    },
+    {
+     "label": "네이버 지도 (위치)",
+     "url": "https://naver.me/GNJ5Bs8C"
+    }
+   ],
+   "checkedAt": "2026-10-15"
+  },
+  {
+   "id": "buyeon-b",
+   "name": "부연스카이케빈 B동",
+   "source": "search",
+   "area": "강릉시 연곡면 부연동길 840",
+   "type": "mountain",
+   "lat": 37.8714413488431,
+   "lng": 128.634558556717,
+   "status": "excluded",
+   "statusNote": "욕실 1개 · 조건 미달",
+   "price": {
+    "total": 380000,
+    "note": "숙박 350,000 + 추가 3명 30,000"
+   },
+   "rooms": {
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "bathroomNote": null,
+    "living": null,
+    "pyeong": 22
+   },
+   "capacity": {
+    "base": 6,
+    "max": 10
+   },
+   "parking": null,
+   "distSea": 15193,
+   "distStore": 6748,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "pros": [
+    "가격 가장 저렴",
+    "바비큐 가능 (숯·그릴 4인 기본 2만원)",
+    "노래방 시설 (시간당 2만원)"
+   ],
+   "cons": [
+    "욕실 1개",
+    "노래방은 객실 밖 별도 시설 · 사전예약 · 밤 10시까지"
+   ],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://m.booking.naver.com/booking/3/bizes/169383/items/2824394?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": "010-5253-5552",
+   "check": [],
+   "address": "강원 강릉시 연곡면 부연동길 840",
+   "nearestBeach": "큰바다해수욕장",
+   "nearestStore": "이마트24 R강릉소금강점",
+   "sources": [
+    {
+     "label": "네이버 예약 (가격)",
+     "url": "https://m.booking.naver.com/booking/3/bizes/169383/items/2824394?startDate=2026-11-21&endDate=2026-11-22"
+    },
+    {
+     "label": "네이버 지도 (위치)",
+     "url": "https://naver.me/GNJ5Bs8C"
+    }
+   ],
+   "checkedAt": "2026-10-15"
+  },
+  {
+   "id": "sagimak",
+   "name": "여긴어디 강릉사기막",
+   "source": "ai",
+   "area": "강릉 사천면 사기막",
+   "type": null,
+   "lat": 37.7742635041047,
+   "lng": 128.767672936402,
+   "status": "unavailable",
+   "statusNote": "11/21–22 · 9명 예약 불가 (에어비앤비)",
+   "price": {
+    "total": null,
+    "note": "추가 인원 1인 2만원"
+   },
+   "rooms": {
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "bathroomNote": null,
+    "living": null,
+    "pyeong": null
+   },
+   "capacity": {
+    "base": 8,
+    "max": 20
+   },
+   "parking": null,
+   "distSea": 11526,
+   "distStore": 3914,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "pros": [
+    "숙소 내 노래방 + 당구대",
+    "바비큐 가능 (숯·그릴 2.5만원)"
+   ],
+   "cons": [
+    "음식 배달 불가 · 장 봐서 입실"
+   ],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://www.airbnb.co.kr/rooms/1386831928148514288",
+   "contact": null,
+   "check": [],
+   "address": "강원도 강릉시 사천면 사기막리",
+   "approx": true,
+   "nearestBeach": "사천해변",
+   "nearestStore": "이마트24 강릉휴게소 강릉방향",
+   "sources": [
+    {
+     "label": "에어비앤비",
+     "url": "https://www.airbnb.co.kr/rooms/1386831928148514288"
+    }
+   ],
+   "checkedAt": "2026-10-15"
+  },
+  {
+   "id": "hyuga",
+   "name": "강릉 휴가스테이",
+   "source": "ai",
+   "area": "강릉시 안현로 167-57",
+   "type": null,
+   "lat": 37.8054706735281,
+   "lng": 128.876575520956,
+   "status": "unavailable",
+   "statusNote": "11/21–22 · 9명 예약 불가 (에어비앤비)",
+   "price": {
+    "total": null,
+    "note": "추가 인원 1인 2만원"
+   },
+   "rooms": {
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "bathroomNote": null,
+    "living": null,
+    "pyeong": null
+   },
+   "capacity": {
+    "base": 4,
+    "max": 12
+   },
+   "parking": null,
+   "distSea": 1978,
+   "distStore": 1891,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "pros": [
+    "1·2층 독채",
+    "숙소 내 노래방 (밤 10시까지)",
+    "바비큐 가능 (숯·그릴 3만원 / 화덕 5만원)"
+   ],
+   "cons": [
+    "별채에 호스트 거주"
+   ],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://www.airbnb.co.kr/rooms/906945132378726791",
+   "contact": null,
+   "check": [],
+   "address": "강원 강릉시 안현로 167-57",
+   "nearestBeach": "순긋해변",
+   "nearestStore": "세븐일레븐 강릉해안로점",
+   "sources": [
+    {
+     "label": "에어비앤비",
+     "url": "https://www.airbnb.co.kr/rooms/906945132378726791"
+    },
+    {
+     "label": "네이버 지도 (위치)",
+     "url": "https://naver.me/FiPZ9A4x"
+    }
+   ],
+   "checkedAt": "2026-10-15"
+  }
+ ]
+}
