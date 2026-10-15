@@ -151,7 +151,7 @@
   },
   {
    "source": "search",
-   "type": null,
+   "type": "sea",
    "lat": 37.3581095493238,
    "lng": 129.248118135593,
    "status": "ok",
