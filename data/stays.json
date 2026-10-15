@@ -152,8 +152,8 @@
   {
    "source": "search",
    "type": null,
-   "lat": 37.3580878959933,
-   "lng": 129.248153038185,
+   "lat": 37.3581095493238,
+   "lng": 129.248118135593,
    "status": "ok",
    "oceanView": null,
    "seaNote": null,
@@ -166,7 +166,7 @@
    },
    "parking": "무료 주차",
    "distSea": 523,
-   "distStore": 3074,
+   "distStore": 3071,
    "checkin": "14:00",
    "checkout": "11:00",
    "heating": null,
@@ -199,8 +199,8 @@
    ],
    "id": "misulgwan",
    "name": "삼척 미술관 스테이 (본관)",
-   "area": "삼척시 근덕면 부남리 121",
-   "address": "강원특별자치도 삼척시 근덕면 부남리 121",
+   "area": "삼척시 근덕면 부남해변길 70-4 (부남미술관)",
+   "address": "강원 삼척시 근덕면 부남해변길 70-4",
    "price": {
     "total": 500000,
     "estimated": true,
@@ -217,6 +217,10 @@
     {
      "label": "여기어때 상세 (가격·시설·후기)",
      "url": "https://www.yeogi.com/domestic-accommodations/72158?checkIn=2026-11-21&checkOut=2026-11-22&personal=9"
+    },
+    {
+     "label": "네이버 지도 (위치)",
+     "url": "https://naver.me/F2LROm0A"
     }
    ],
    "checkedAt": "2026-10-15"
