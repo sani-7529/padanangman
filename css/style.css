@@ -86,3 +86,12 @@ main{flex:1;min-height:0;position:relative;overflow:auto}
 .gal img{flex:0 0 100%;height:230px;object-fit:cover;scroll-snap-align:start}
 .galn{font-size:11px;color:var(--mute);text-align:center;padding:6px 0 0}
 .src a{color:var(--sea);text-decoration:none;font-size:14px}
+
+.pin.act{background:#111;border-radius:8px;font-size:12px}
+.adesc{font-size:13px;line-height:1.55;color:#444;margin:10px 0 8px}
+.acttbl th,.acttbl td{font-size:12px;min-width:0;padding:8px 6px}
+.acttbl th:first-child{position:static}
+.near{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:14px}
+.near li{display:flex;justify-content:space-between}
+.near a{color:var(--fg)}
+.near span{color:var(--mute)}

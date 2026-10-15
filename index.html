@@ -18,6 +18,7 @@
 <nav class="tabs" id="tabs">
   <button data-tab="map" class="on">지도</button>
   <button data-tab="list">목록</button>
+  <button data-tab="activity">액티비티</button>
   <button data-tab="compare">비교 <i id="cmpCount"></i></button>
 </nav>
 
@@ -32,6 +33,7 @@
     <button data-v="sea">바다</button>
     <button data-v="mountain">산</button>
   </div>
+  <label class="toggle" id="actToggle"><input type="checkbox" id="showAct" checked> 액티비티</label>
   <label class="toggle"><input type="checkbox" id="ocean"> 오션뷰</label>
   <label class="toggle"><input type="checkbox" id="hideBad"> 불가 숨기기</label>
 </div>
@@ -39,6 +41,7 @@
 <main>
   <section id="view-map"><div id="map"></div><div id="mapMsg" class="mapmsg" hidden></div></section>
   <section id="view-list" hidden></section>
+  <section id="view-activity" hidden></section>
   <section id="view-compare" hidden></section>
 </main>
 

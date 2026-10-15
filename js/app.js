@@ -9,7 +9,7 @@ const state = window.__app = {
   stays: [], trip: {}, tab: 'map',
   source: 'all', type: 'all', hideBad: false, ocean: false,
   compare: [], hearts: {}, name: null, sb: null,
-  map: null, overlays: [],
+  map: null, overlays: [], acts: [], showAct: true,
 };
 try { state.name = localStorage.getItem('who'); state.compare = JSON.parse(localStorage.getItem('cmp') || '[]'); } catch {}
 
@@ -35,6 +35,7 @@ async function loadData() {
   const r = await fetch('data/stays.json', { cache: 'no-cache' });
   const d = await r.json();
   state.stays = d.stays; state.trip = d.trip;
+  try { state.acts = (await (await fetch('data/activities.json', { cache: 'no-cache' })).json()).activities; } catch {}
   $('#tripInfo').textContent = `${d.trip.dates} · ${d.trip.people}명`;
 }
 
@@ -252,6 +253,18 @@ function renderMap() {
     ov.setMap(state.map);
     state.overlays.push(ov); bounds.extend(pos); n++;
   }
+  if (state.showAct) {
+    for (const a of state.acts) {
+      if (a.lat == null) continue;
+      const el = document.createElement('div');
+      el.className = 'pin act';
+      el.textContent = '★ ' + a.name.split(' ')[0];
+      el.onclick = () => openAct(a.id);
+      const pos = new kakao.maps.LatLng(a.lat, a.lng);
+      const ov = new kakao.maps.CustomOverlay({ position: pos, content: el, yAnchor: 1 });
+      ov.setMap(state.map); state.overlays.push(ov); bounds.extend(pos); n++;
+    }
+  }
   state.bounds = n ? bounds : null;
   fitMap();
 }
@@ -261,23 +274,79 @@ function fitMap() {
   state.map.setBounds(state.bounds, 70, 50, 50, 50);
 }
 
+/* ---------- activities ---------- */
+const km = (a, b) => {
+  const R = 6371, r = (x) => (x * Math.PI) / 180;
+  const dLat = r(b.lat - a.lat), dLng = r(b.lng - a.lng);
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(r(a.lat)) * Math.cos(r(b.lat)) * Math.sin(dLng / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(h));
+};
+function nearStays(a) {
+  if (a.lat == null) return [];
+  return state.stays.filter((s) => s.lat != null && s.status === 'ok')
+    .map((s) => ({ s, d: km(a, s) })).sort((x, y) => x.d - y.d);
+}
+function actCard(a) {
+  return `<article class="card"><div class="cbody" data-act="${a.id}">
+    <div class="crow"><div><div class="cname">${esc(a.name)}</div><div class="carea">${esc(a.area)}</div></div></div>
+    <div class="facts" style="margin-top:8px">${(a.tags || []).map((t) => `<span class="f">${esc(t)}</span>`).join('')}</div>
+    <p class="adesc">${esc(a.summary)}</p>
+    <div class="facts"><span class="f">🕘 ${esc(a.hours.split(' (')[0])}</span></div>
+  </div></article>`;
+}
+function renderActivity() {
+  $('#view-activity').innerHTML = state.acts.length
+    ? `<div class="list">${state.acts.map(actCard).join('')}</div>` : '<div class="empty">액티비티가 아직 없어요</div>';
+}
+function openAct(id) {
+  const a = state.acts.find((x) => x.id === id);
+  if (!a) return;
+  const li = (arr) => arr.map((x) => `<li>${esc(x)}</li>`).join('');
+  const rows = a.items.map((i) => `<tr><td><b>${esc(i.name)}</b></td>
+    <td>${i.price ? won(i.price) : '<span class="q">확인 필요</span>'}${i.two ? `<br><small class="q">2회권 ${won(i.two)}</small>` : ''}</td>
+    <td>${i.price ? '≈ ' + won(i.price * CONFIG.headcount) : '–'}</td>
+    <td class="q">${esc(i.limit)}</td></tr>`).join('');
+  const near = nearStays(a).slice(0, 5);
+  $('#sheet').innerHTML = `
+    <div class="sh" style="padding-top:22px"><button class="x" data-close>✕</button>
+      <div style="display:flex;gap:6px;margin-bottom:8px">${(a.tags || []).map((t) => `<span class="badge b-unk">${esc(t)}</span>`).join('')}</div>
+      <h2>${esc(a.name)}</h2><div class="carea">${esc(a.address)}</div>
+      <p class="adesc" style="margin-top:12px">${esc(a.summary)}</p></div>
+    <div class="grid">
+      <div class="g"><span>운영시간</span><b>${esc(a.hours)}</b></div>
+      <div class="g"><span>휴무</span><b>${esc(a.closed)}</b></div>
+      ${a.entry ? `<div class="g"><span>${esc(a.entry.label)}</span><b>${esc(a.entry.price)}</b></div>` : ''}
+      <div class="g"><span>문의</span><b><a href="tel:${esc(a.phone)}">${esc(a.phone)}</a></b></div>
+    </div>
+    <div class="sec"><h3>종류 · 요금 (1회권) · 9명 합계</h3>
+      <div class="cmpwrap" style="padding:0"><table class="acttbl"><tr><th>체험</th><th>1인</th><th>9명</th><th>제한</th></tr>${rows}</table></div></div>
+    ${a.packages?.length ? `<div class="sec"><h3>패키지 · 참고</h3><ul class="pl">${li(a.packages)}</ul></div>` : ''}
+    ${a.extra?.length ? `<div class="sec"><h3>알아두면 좋아요</h3><ul class="pl">${li(a.extra)}</ul></div>` : ''}
+    ${a.check?.length ? `<div class="sec"><h3>확인할 것</h3><ul class="ck">${li(a.check)}</ul></div>` : ''}
+    ${near.length ? `<div class="sec"><h3>가까운 숙소 (직선거리)</h3><ul class="near">${near.map((n) => `<li><a href="#" data-open="${n.s.id}">${esc(n.s.name)}</a><span>${n.d.toFixed(1)}km</span></li>`).join('')}</ul></div>` : ''}
+    ${sources(a)}
+    <div class="actions"><a class="btn" href="${esc(a.sources[0].url)}" target="_blank" rel="noopener">공식 정보 보기</a><a class="btn ghost" href="tel:${esc(a.phone)}">전화</a></div>`;
+  $('#sheet').dataset.id = ''; $('#sheet').hidden = false; $('#sheetBg').hidden = false;
+}
+
 /* ---------- shell ---------- */
 function render() {
   renderWho();
-  renderList(); renderCompare(); renderMap();
-  for (const t of ['map', 'list', 'compare']) $(`#view-${t}`).hidden = state.tab !== t;
+  renderList(); renderCompare(); renderActivity(); renderMap();
+  for (const t of ['map', 'list', 'activity', 'compare']) $(`#view-${t}`).hidden = state.tab !== t;
   document.querySelectorAll('#tabs button').forEach((b) => b.classList.toggle('on', b.dataset.tab === state.tab));
-  $('#filters').hidden = state.tab === 'compare';
+  $('#filters').hidden = state.tab === 'compare' || state.tab === 'activity';
   if (state.tab === 'map' && state.map) state.map.relayout();
   const sid = $('#sheet').dataset.id; if (sid && !$('#sheet').hidden) openSheet(sid);
 }
 
 document.addEventListener('click', (e) => {
-  const t = e.target.closest('button,[data-open],a[data-open]');
+  const t = e.target.closest('button,[data-open],[data-act]');
   if (!t) { return; }
   if (t.dataset.tab) { state.tab = t.dataset.tab; location.hash = state.tab; render(); }
   else if (t.dataset.heart) toggleHeart(t.dataset.heart);
   else if (t.dataset.cmp) toggleCompare(t.dataset.cmp);
+  else if (t.dataset.act) openAct(t.dataset.act);
   else if (t.dataset.open) { e.preventDefault(); openSheet(t.dataset.open); }
   else if ('close' in t.dataset) closeSheet();
   else if (t.id === 'who') askName();
@@ -289,12 +358,13 @@ document.addEventListener('click', (e) => {
   }
 });
 $('#sheetBg').onclick = closeSheet;
+$('#showAct').onchange = (e) => { state.showAct = e.target.checked; render(); };
 $('#ocean').onchange = (e) => { state.ocean = e.target.checked; render(); };
 $('#hideBad').onchange = (e) => { state.hideBad = e.target.checked; render(); };
 
 (async () => {
   const h = location.hash.slice(1);
-  if (['map', 'list', 'compare'].includes(h)) state.tab = h;
+  if (['map', 'list', 'activity', 'compare'].includes(h)) state.tab = h;
   await loadData();
   render();
   initMap();

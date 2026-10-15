@@ -41,3 +41,16 @@ for s in d['stays']:
         s['distStore'] = int(stores[0]['distance']); s['nearestStore'] = stores[0]['place_name']
     print(s['name'], s['lat'], s['lng'], 'sea', s.get('distSea'), s.get('nearestBeach'), 'store', s.get('distStore'), s.get('nearestStore'))
 json.dump(d, open(P, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+
+# activities: coordinates only
+AP = os.path.join(ROOT, 'data', 'activities.json')
+a = json.load(open(AP, encoding='utf-8'))
+for x in a['activities']:
+    if x['lat'] is None:
+        pos = geocode(x['address'])
+        if pos:
+            x['lat'], x['lng'] = pos
+        else:
+            print('NO GEOCODE:', x['name'], x['address'])
+    print(x['name'], x['lat'], x['lng'])
+json.dump(a, open(AP, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
