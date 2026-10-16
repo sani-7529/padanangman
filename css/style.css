@@ -96,3 +96,8 @@ main{flex:1;min-height:0;position:relative;overflow:auto}
 .near a{color:var(--fg)}
 .near span{color:var(--mute)}
 .b-new{background:#111;color:#fff;letter-spacing:.3px}
+
+.b-best{background:linear-gradient(135deg,#f5d77a,#e8b64c);color:#4a3200}
+.crit{display:flex;flex-wrap:wrap;gap:6px}
+.cr{font-size:12px;padding:5px 10px;border-radius:99px;background:var(--soft)}
+.cr.ok{background:#e6f6ec;color:#15803d}.cr.no{background:#fee;color:#c0392b}.cr.q{color:var(--mute)}

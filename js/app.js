@@ -37,6 +37,18 @@ function auto(s) {
   }
   return { pros, cons };
 }
+// 필수 조건: 독채 · 바비큐 · 다 같이 쓸 공간 · 역/터미널 가까움(3km 이내 또는 픽업)
+function criteria(s) {
+  const d = [s.distBus, s.distTrain].filter((x) => x != null);
+  const transit = s.pickup ? true : d.length ? Math.min(...d) <= 3000 : null;
+  return [['독채', s.detached], ['바비큐', s.bbq], ['다 같이 쓸 공간', s.space], ['역·터미널', transit]];
+}
+function isBest(s) {
+  if (s.status !== 'ok') return false;
+  const v = criteria(s).map((x) => x[1]);
+  return !v.includes(false) && v.filter((x) => x === true).length >= 3;
+}
+const bestBadge = (s) => (isBest(s) ? '<span class="badge b-best">THE BEST</span>' : '');
 const seaText = (s) => meters(s.distSea);
 const typeLabel = (t) => (t === 'sea' ? '바다' : t === 'mountain' ? '산' : '위치 확인 필요');
 const typeBadge = (s) => `<span class="badge ${s.type === 'sea' ? 'b-sea' : s.type === 'mountain' ? 'b-mtn' : 'b-unk'}">${typeLabel(s.type)}</span>`;
@@ -46,7 +58,7 @@ const badBadge = (s) => (isBad(s) ? `<span class="badge b-bad">${s.status === 'u
 
 function visible() {
   return state.stays.filter((s) =>
-    (state.source === 'all' || (state.source === 'new' ? s.isNew : s.source === state.source)) &&
+    (state.source === 'all' || (state.source === 'new' ? s.isNew : state.source === 'best' ? isBest(s) : s.source === state.source)) &&
     (state.type === 'all' || s.type === state.type) &&
     (!state.ocean || s.oceanView === true) &&
     !(state.hideBad && isBad(s)));
@@ -138,7 +150,7 @@ function card(s) {
     ${thumb(s)}
     <div class="cbody" data-open="${s.id}">
       <div class="crow"><div><div class="cname">${esc(s.name)}</div><div class="carea">${esc(s.area)}</div></div>
-      <div style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end">${newBadge(s)}${typeBadge(s)}${oceanBadge(s)}${badBadge(s)}</div></div>
+      <div style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end">${bestBadge(s)}${newBadge(s)}${typeBadge(s)}${oceanBadge(s)}${badBadge(s)}</div></div>
       ${priceHtml(s)}
       <div class="facts">${facts(s)}</div>
     </div>
@@ -161,7 +173,7 @@ function openSheet(id) {
   $('#sheet').innerHTML = `
     <div style="position:relative">${gallery(s)}<button class="x" data-close>✕</button></div>
     <div class="sh">
-      <div style="display:flex;gap:6px;margin-bottom:8px">${newBadge(s)}${typeBadge(s)}${oceanBadge(s)}${badBadge(s)}<span class="badge b-unk">${s.source === 'ai' ? 'AI 추천' : '검색 결과'}</span></div>
+      <div style="display:flex;gap:6px;margin-bottom:8px">${bestBadge(s)}${newBadge(s)}${typeBadge(s)}${oceanBadge(s)}${badBadge(s)}<span class="badge b-unk">${s.source === 'ai' ? 'AI 추천' : '검색 결과'}</span></div>
       <h2>${esc(s.name)}</h2><div class="carea">${esc(s.area)}</div>
       ${priceHtml(s)}
       ${s.price?.note ? `<div class="carea" style="margin-top:4px">${esc(s.price.note)}</div>` : ''}
@@ -181,6 +193,7 @@ function openSheet(id) {
       ${g('체크인', s.checkin)}
       ${g('체크아웃', s.checkout)}
     </div>
+    <div class="sec"><h3>필수 조건</h3><div class="crit">${criteria(s).map(([n, v]) => `<span class="cr ${v === true ? 'ok' : v === false ? 'no' : 'q'}">${v === true ? '✓' : v === false ? '✕' : '?'} ${n}</span>`).join('')}</div></div>
     ${r.bathroomNote ? `<div class="alert" style="background:#fff8e6;color:#9a6700">${esc(r.bathroomNote)}</div>` : ''}
     ${(s.pros?.length || auto(s).pros.length) ? `<div class="sec"><h3>있어요</h3><ul class="pl">${li([...(s.pros || []), ...auto(s).pros])}</ul></div>` : ''}
     ${(s.cons?.length || auto(s).cons.length) ? `<div class="sec"><h3>아쉬워요</h3><ul class="mi">${li([...(s.cons || []), ...auto(s).cons])}</ul></div>` : ''}
