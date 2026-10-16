@@ -57,8 +57,16 @@
    "cons": [
     "9명 바비큐 이용료 미확인"
    ],
-   "reviewSummary": null,
-   "photos": [],
+   "reviewSummary": "카카오맵 별점 3.4 ('나이아드펜션모텔'로 등록).",
+   "photos": [
+    "https://t1.kakaocdn.net/one/store/20260707161943-b5de5482-6ce0-4577-827d-dd36bf8c55ad.jpg",
+    "https://t1.kakaocdn.net/one/store/20260707161943-f1cdbd21-153a-4f8d-a27f-4155750f98b7.jpg",
+    "https://t1.kakaocdn.net/one/store/20260707161943-f934e446-68d1-499e-bbc2-d921cafa52be.jpg",
+    "https://t1.kakaocdn.net/one/store/20260707161943-d93e05d4-b793-4899-b10f-9fc91ccb59e3.jpg",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F88%2F1326144%2F3cd1488f6e3edfd04884b5b768f6a896526699.png",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F88%2F1326144%2F9f35739f68321e4850602bf92ff90d80526926.png",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F88%2F1326144%2F2f6bf0fee79c8192e18b79373bac5aad526998.png"
+   ],
    "url": "https://booking.naver.com/booking/3/bizes/1630705/items/7573757?startDate=2026-11-21&endDate=2026-11-22",
    "contact": null,
    "check": [],
@@ -66,6 +74,10 @@
     {
      "label": "네이버 예약 (가격·객실)",
      "url": "https://booking.naver.com/booking/3/bizes/1630705/items/7573757?startDate=2026-11-21&endDate=2026-11-22"
+    },
+    {
+     "label": "카카오맵 (사진·후기)",
+     "url": "https://place.map.kakao.com/1108424784"
     }
    ],
    "checkedAt": "2026-10-16",
@@ -129,8 +141,17 @@
     "9명 바비큐 요금 안내가 달라 문의 필요",
     "평창이라 강릉에서 멀음"
    ],
-   "reviewSummary": null,
-   "photos": [],
+   "reviewSummary": "카카오맵 별점 5.0 (후기 1개). 블로그에 '평창 단체 계곡 한옥 펜션' 후기가 있어요.",
+   "photos": [
+    "https://t1.kakaocdn.net/one/store/20250225062413-06b4d946-60cf-4b79-b1a6-507f68dac3e8.jpg",
+    "https://t1.kakaocdn.net/one/store/20250225062413-8ee1c8aa-129a-4bdd-8fa3-6fe0fbec2c81.jpg",
+    "https://t1.kakaocdn.net/one/store/20250225062414-a5e7ee8a-82c8-4d89-8591-508c196262de.jpg",
+    "https://t1.kakaocdn.net/one/store/20250225062414-c5cec9e7-087a-40a0-ba23-f3d36d1a9382.jpg",
+    "https://t1.kakaocdn.net/one/store/20250225062414-728d67b2-21ac-4925-b7f1-c5eba62a2710.jpg",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F65%2F1001721%2F3d33486b4fab47f8623a6f854a608b7e50270.png",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F65%2F1001721%2F4113eb6ea9daeecd94a9374c212b776050808.png",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F65%2F1001721%2F3f7aa2da28284f46fc68ea6d66771f86194113.png"
+   ],
    "url": "https://booking.naver.com/booking/3/bizes/1580656/items/7369157?startDate=2026-11-21&endDate=2026-11-22",
    "contact": null,
    "check": [],
@@ -138,6 +159,10 @@
     {
      "label": "네이버 예약 (가격·객실)",
      "url": "https://booking.naver.com/booking/3/bizes/1580656/items/7369157?startDate=2026-11-21&endDate=2026-11-22"
+    },
+    {
+     "label": "카카오맵 (사진·후기)",
+     "url": "https://place.map.kakao.com/22516944"
     }
    ],
    "checkedAt": "2026-10-16",
@@ -200,8 +225,13 @@
     "양양이라 강릉에서 멀음",
     "바비큐 사전 문의"
    ],
-   "reviewSummary": null,
-   "photos": [],
+   "reviewSummary": "카카오맵 별점 3.6.",
+   "photos": [
+    "http://t1.kakaocdn.net/local/kakaomapPhoto/review/8ab20e98cb0d50442ac6daef52e551dbe59b29fe?original",
+    "http://t1.kakaocdn.net/mystore/9B7EDF28A59946BBA3B4FDB6BF6AF83B",
+    "http://t1.kakaocdn.net/mystore/9D9004F969004AFB8EA2033D23FA2348",
+    "http://t1.kakaocdn.net/mystore/21E36155798741219F5DB50FD651934B"
+   ],
    "url": "https://booking.naver.com/booking/3/bizes/1554687/items/7264424?startDate=2026-11-21&endDate=2026-11-22",
    "contact": null,
    "check": [],
@@ -209,6 +239,10 @@
     {
      "label": "네이버 예약 (가격·객실)",
      "url": "https://booking.naver.com/booking/3/bizes/1554687/items/7264424?startDate=2026-11-21&endDate=2026-11-22"
+    },
+    {
+     "label": "카카오맵 (사진·후기)",
+     "url": "https://place.map.kakao.com/543056235"
     }
    ],
    "checkedAt": "2026-10-16",
@@ -409,8 +443,17 @@
    "cons": [
     "바비큐: 전날 신청, 강풍 시 불가 (개별 5.5만원)"
    ],
-   "reviewSummary": null,
-   "photos": [],
+   "reviewSummary": "카카오맵 별점 5.0 (후기 4개): 아늑하고 조용하며 사장님이 섬세하다는 평. '여기서 만족 못하면 다른 펜션 찾기 어렵다'는 후기도 있어요.",
+   "photos": [
+    "https://t1.kakaocdn.net/one/store/20260804185418-dbb6c0f5-0b49-407e-8367-77d4ea1981ab.jpg",
+    "https://t1.kakaocdn.net/one/store/20260804185418-131be9ba-a6fb-4daf-8e12-8f3b306e0af6.jpg",
+    "https://t1.kakaocdn.net/one/store/20260804185418-d614b3a5-98b2-4395-a7f0-f6da91e45cc6.jpg",
+    "https://t1.kakaocdn.net/one/store/20260804185418-770c882f-bf27-4742-bc1f-7356a138cedb.jpg",
+    "https://t1.kakaocdn.net/one/store/20260804185418-d8aea5d1-dd1c-4b6c-83b8-dd742311a317.jpg",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F93%2F1203049%2Fde880916e5523696aeff71790b551d0f122762.png",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F93%2F1203049%2F0ada2f0632852868879fa11ad6857a59123745.png",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F93%2F1203049%2Fdfca6fe269e6805ea171d8540bb3dbe9124334.png"
+   ],
    "url": "https://booking.naver.com/booking/3/bizes/1411079/items/6745589?startDate=2026-11-21&endDate=2026-11-22",
    "contact": null,
    "check": [],
@@ -418,6 +461,10 @@
     {
      "label": "네이버 예약 (가격·객실)",
      "url": "https://booking.naver.com/booking/3/bizes/1411079/items/6745589?startDate=2026-11-21&endDate=2026-11-22"
+    },
+    {
+     "label": "카카오맵 (사진·후기)",
+     "url": "https://place.map.kakao.com/1359122404"
     }
    ],
    "checkedAt": "2026-10-16",
@@ -481,8 +528,17 @@
     "바비큐 7천원×9명 + 동절기 필수 장작 2만원 = 8.3만원",
     "평창이라 강릉에서 멀음"
    ],
-   "reviewSummary": null,
-   "photos": [],
+   "reviewSummary": "카카오맵 후기 1개 (2019년, 별점 2.0): 청소 상태와 샤워기 불만. 오래된 후기라 참고만 하세요.",
+   "photos": [
+    "https://t1.kakaocdn.net/one/store/20260709105429-3ddf3022-6f6a-403f-a0ad-7ab3ebf49e41.jpg",
+    "https://t1.kakaocdn.net/one/store/20260709105429-27573bbe-800d-447e-b032-9df216cd7a0b.jpg",
+    "https://t1.kakaocdn.net/one/store/20260709105429-ed9a192a-d328-46a0-a67f-1c6b06a2aa5a.jpg",
+    "https://t1.kakaocdn.net/one/store/20260709105429-8a5eb69c-981e-48d2-a135-cd556022bc41.jpg",
+    "https://t1.kakaocdn.net/one/store/20260709105429-a43c0b7b-8a11-4db6-afc4-bdb397dc3293.jpg",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F61%2F1327817%2F9061fb901f31710b3e893e8e1f07170a494866.png",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F61%2F1327817%2F9c0380f4f478d8f2a218b501ea003038495096.png",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F61%2F1327817%2F4880f4a00137e6a2c30d366e690a53d6495289.png"
+   ],
    "url": "https://booking.naver.com/booking/3/bizes/1359353/items/6565657?startDate=2026-11-21&endDate=2026-11-22",
    "contact": null,
    "check": [],
@@ -490,6 +546,10 @@
     {
      "label": "네이버 예약 (가격·객실)",
      "url": "https://booking.naver.com/booking/3/bizes/1359353/items/6565657?startDate=2026-11-21&endDate=2026-11-22"
+    },
+    {
+     "label": "카카오맵 (사진·후기)",
+     "url": "https://place.map.kakao.com/8114353"
     }
    ],
    "checkedAt": "2026-10-16",
@@ -615,8 +675,17 @@
     "예약 전 업체 사전문의 필수",
     "양양이라 강릉에서 멀음"
    ],
-   "reviewSummary": null,
-   "photos": [],
+   "reviewSummary": "카카오맵 별점 5.0: 사장님 부부가 친절하고 조용하며 뷰가 좋다는 평. 앞에 냇가가 있어 물놀이도 가능해요.",
+   "photos": [
+    "https://t1.kakaocdn.net/one/store/20250706033016-7bc9862c-7260-484f-9d4b-fe7c0bfe3a34.jpg",
+    "https://t1.kakaocdn.net/one/store/20250706033016-e21dd58b-ee51-49de-a1b0-5526190b91ca.jpg",
+    "https://t1.kakaocdn.net/one/store/20250706033016-cf4cf56b-f840-420f-9256-26d48bcb0f43.jpg",
+    "https://t1.kakaocdn.net/one/store/20250706033016-41d56419-c58f-45a1-9789-7fdefbe3e679.jpg",
+    "https://t1.kakaocdn.net/one/store/20250706033016-5bfbaac1-a83d-442f-8f5f-58b6eb91ad84.jpg",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F4%2F1014960%2F18cf5ae61c08195f3509d52342820f93222906.png",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F4%2F1014960%2Fea3cd096071b13e713d577a500a3e938223228.png",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F4%2F1014960%2Fb85669676a219a6db2b30964aab88d99223372.png"
+   ],
    "url": "https://booking.naver.com/booking/3/bizes/226985/items/3024493?startDate=2026-11-21&endDate=2026-11-22",
    "contact": null,
    "check": [],
@@ -624,6 +693,10 @@
     {
      "label": "네이버 예약 (가격·객실)",
      "url": "https://booking.naver.com/booking/3/bizes/226985/items/3024493?startDate=2026-11-21&endDate=2026-11-22"
+    },
+    {
+     "label": "카카오맵 (사진·후기)",
+     "url": "https://place.map.kakao.com/8196528"
     }
    ],
    "checkedAt": "2026-10-16",
@@ -750,10 +823,13 @@
     "침실 3 · 욕실 2"
    ],
    "cons": [
+    "카카오맵 별점 2.6 · 주인 응대·추가요금 불만 후기 있음",
     "9명 바비큐 요금 미확인 (4~6인 3만원)"
    ],
-   "reviewSummary": null,
-   "photos": [],
+   "reviewSummary": "카카오맵 별점 2.6: 영진해변을 걸어 나갈 수 있어 좋다는 후기도 있지만, 주인 응대·추가요금 불만(2023, 2026년 5월) 후기가 있어요.",
+   "photos": [
+    "http://t1.kakaocdn.net/local/kakaomapPhoto/review/895aa5db1d465060d5ddc0a71839935cf495eb24?original"
+   ],
    "url": "https://booking.naver.com/booking/3/bizes/675546/items/4362786?startDate=2026-11-21&endDate=2026-11-22",
    "contact": null,
    "check": [],
@@ -761,6 +837,10 @@
     {
      "label": "네이버 예약 (가격·객실)",
      "url": "https://booking.naver.com/booking/3/bizes/675546/items/4362786?startDate=2026-11-21&endDate=2026-11-22"
+    },
+    {
+     "label": "카카오맵 (사진·후기)",
+     "url": "https://place.map.kakao.com/826878990"
     }
    ],
    "checkedAt": "2026-10-16",
@@ -821,8 +901,17 @@
     "백탄 참숯·대형 그릴 (4만원)"
    ],
    "cons": [],
-   "reviewSummary": null,
-   "photos": [],
+   "reviewSummary": "카카오맵 별점 5.0 (후기 1개): 독채라 단체·가족·친구 모임에 좋고 청결하다는 평. 맛집과 해변 접근성이 좋다고 해요.",
+   "photos": [
+    "https://t1.kakaocdn.net/one/store/20250228104651-b0086804-9c27-43ec-b85c-dbcf0e2872db.jpg",
+    "https://t1.kakaocdn.net/one/store/20250228104651-7afe6cfd-7d03-41c5-8b74-fe08d921d651.jpg",
+    "https://t1.kakaocdn.net/one/store/20250228104651-432fbdb4-0537-4f10-8e54-f72ed43108e3.jpg",
+    "https://t1.kakaocdn.net/one/store/20250228104651-ec53149d-b7c3-464a-a24e-0a6a91ab07bf.jpg",
+    "https://t1.kakaocdn.net/one/store/20250228104651-85243d08-0219-4193-82b8-ca749e0cb545.jpg",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F83%2F1092739%2F565a06d93b463b9f623496299ec8284f141045.png",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F83%2F1092739%2Fe2909e9d880c1a9e1e7fa9ac2a041151141296.png",
+    "https://img1.kakaocdn.net/cthumb/local/C600x304.q50/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fone%2Fprod%2Fproduct%2FaccommodationRoom%2F83%2F1092739%2F0b913bb1c054d1f0c7667c55ae07fd11141388.png"
+   ],
    "url": "https://booking.naver.com/booking/3/bizes/1110684/items/5760664?startDate=2026-11-21&endDate=2026-11-22",
    "contact": null,
    "check": [],
@@ -830,6 +919,10 @@
     {
      "label": "네이버 예약 (가격·객실)",
      "url": "https://booking.naver.com/booking/3/bizes/1110684/items/5760664?startDate=2026-11-21&endDate=2026-11-22"
+    },
+    {
+     "label": "카카오맵 (사진·후기)",
+     "url": "https://place.map.kakao.com/423962654"
     }
    ],
    "checkedAt": "2026-10-16",
@@ -893,8 +986,17 @@
     "황토방은 1박 10만원 별도",
     "양양이라 강릉에서 멀음"
    ],
-   "reviewSummary": null,
-   "photos": [],
+   "reviewSummary": "카카오맵 별점 5.0: 독채 펜션이고 마당이 크며 최대 12명까지 가능하다는 후기. 주차장은 크지 않다고 해요.",
+   "photos": [
+    "http://t1.kakaocdn.net/local/kakaomapPhoto/review/f0f9cb82c4a614a9ee15ae77279097103250ec7f?original",
+    "http://t1.kakaocdn.net/local/kakaomapPhoto/review/ef3dc26f7038c248fc651e6a9e8d0e4ea59b6468?original",
+    "http://t1.kakaocdn.net/local/kakaomapPhoto/review/c7be2d04f266a16cf7c68fcb61ff698a357924d9?original",
+    "http://t1.kakaocdn.net/local/kakaomapPhoto/review/b81e9c286eabf38712b27471370aa3cb1c9eee7f?original",
+    "http://t1.kakaocdn.net/local/kakaomapPhoto/review/b5643ced03a45f36f81f2554f0c7538b8f43bc28?original",
+    "http://t1.kakaocdn.net/local/kakaomapPhoto/review/b3f6c11e6d0a51d2f14ab175366b0156edf1859f?original",
+    "http://t1.kakaocdn.net/local/kakaomapPhoto/review/921512454d4f2b204f73cb313e40ca0e8b7b3684?original",
+    "http://t1.kakaocdn.net/local/kakaomapPhoto/review/400e5746b451b1606f8e86b34c04d03f2d8db654?original"
+   ],
    "url": "https://booking.naver.com/booking/3/bizes/1063902/items/5595320?startDate=2026-11-21&endDate=2026-11-22",
    "contact": null,
    "check": [],
@@ -902,6 +1004,10 @@
     {
      "label": "네이버 예약 (가격·객실)",
      "url": "https://booking.naver.com/booking/3/bizes/1063902/items/5595320?startDate=2026-11-21&endDate=2026-11-22"
+    },
+    {
+     "label": "카카오맵 (사진·후기)",
+     "url": "https://place.map.kakao.com/1808913598"
     }
    ],
    "checkedAt": "2026-10-16",
@@ -966,8 +1072,13 @@
     "숯·철망 직접 준비, 사전예약",
     "평창이라 강릉에서 멀음"
    ],
-   "reviewSummary": null,
-   "photos": [],
+   "reviewSummary": "카카오맵 별점 3.4.",
+   "photos": [
+    "http://t1.kakaocdn.net/local/kakaomapPhoto/review/a3b301b1000ac45c23159792f8e372657620c083?original",
+    "http://t1.kakaocdn.net/local/kakaomapPhoto/review/f152e510d2ee7f1556bdb57efdddbeeafbe60e9f?original",
+    "http://t1.kakaocdn.net/mystore/2775718EDCAE440CA6966BE036F85F10",
+    "http://t1.kakaocdn.net/mystore/BCFC2888166B48C3B29CD51E711F9181"
+   ],
    "url": "https://booking.naver.com/booking/3/bizes/1544934/items/7224137?startDate=2026-11-21&endDate=2026-11-22",
    "contact": null,
    "check": [],
@@ -983,6 +1094,10 @@
     {
      "label": "네이버 예약 C",
      "url": "https://booking.naver.com/booking/3/bizes/1544934/items/7224139?startDate=2026-11-21&endDate=2026-11-22"
+    },
+    {
+     "label": "카카오맵 (사진·후기)",
+     "url": "https://place.map.kakao.com/11957557"
     }
    ],
    "checkedAt": "2026-10-16",
@@ -1034,7 +1149,7 @@
    "pickup": false,
    "pros": [],
    "cons": [],
-   "reviewSummary": null,
+   "reviewSummary": "카카오맵 별점 5.0 (후기 1개, 2020): 실내가 깨끗하고 사장님이 착해서 정동진에 가면 다시 예약하겠다는 평.",
    "photos": [],
    "url": "https://naver.me/5YFd558Q",
    "contact": null,
@@ -1045,6 +1160,10 @@
     {
      "label": "네이버 지도",
      "url": "https://naver.me/5YFd558Q"
+    },
+    {
+     "label": "카카오맵 (사진·후기)",
+     "url": "https://place.map.kakao.com/744647118"
     }
    ],
    "checkedAt": "2026-10-16",
