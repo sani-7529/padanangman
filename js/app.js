@@ -40,12 +40,13 @@ function auto(s) {
 const seaText = (s) => meters(s.distSea);
 const typeLabel = (t) => (t === 'sea' ? '바다' : t === 'mountain' ? '산' : '위치 확인 필요');
 const typeBadge = (s) => `<span class="badge ${s.type === 'sea' ? 'b-sea' : s.type === 'mountain' ? 'b-mtn' : 'b-unk'}">${typeLabel(s.type)}</span>`;
+const newBadge = (s) => (s.isNew ? '<span class="badge b-new">NEW</span>' : '');
 const oceanBadge = (s) => (s.oceanView ? '<span class="badge b-ocean">오션뷰</span>' : '');
 const badBadge = (s) => (isBad(s) ? `<span class="badge b-bad">${s.status === 'unavailable' ? '예약 불가' : '조건 미달'}</span>` : '');
 
 function visible() {
   return state.stays.filter((s) =>
-    (state.source === 'all' || s.source === state.source) &&
+    (state.source === 'all' || (state.source === 'new' ? s.isNew : s.source === state.source)) &&
     (state.type === 'all' || s.type === state.type) &&
     (!state.ocean || s.oceanView === true) &&
     !(state.hideBad && isBad(s)));
@@ -137,7 +138,7 @@ function card(s) {
     ${thumb(s)}
     <div class="cbody" data-open="${s.id}">
       <div class="crow"><div><div class="cname">${esc(s.name)}</div><div class="carea">${esc(s.area)}</div></div>
-      <div style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end">${typeBadge(s)}${oceanBadge(s)}${badBadge(s)}</div></div>
+      <div style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end">${newBadge(s)}${typeBadge(s)}${oceanBadge(s)}${badBadge(s)}</div></div>
       ${priceHtml(s)}
       <div class="facts">${facts(s)}</div>
     </div>
@@ -160,7 +161,7 @@ function openSheet(id) {
   $('#sheet').innerHTML = `
     <div style="position:relative">${gallery(s)}<button class="x" data-close>✕</button></div>
     <div class="sh">
-      <div style="display:flex;gap:6px;margin-bottom:8px">${typeBadge(s)}${oceanBadge(s)}${badBadge(s)}<span class="badge b-unk">${s.source === 'ai' ? 'AI 추천' : '검색 결과'}</span></div>
+      <div style="display:flex;gap:6px;margin-bottom:8px">${newBadge(s)}${typeBadge(s)}${oceanBadge(s)}${badBadge(s)}<span class="badge b-unk">${s.source === 'ai' ? 'AI 추천' : '검색 결과'}</span></div>
       <h2>${esc(s.name)}</h2><div class="carea">${esc(s.area)}</div>
       ${priceHtml(s)}
       ${s.price?.note ? `<div class="carea" style="margin-top:4px">${esc(s.price.note)}</div>` : ''}

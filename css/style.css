@@ -95,3 +95,4 @@ main{flex:1;min-height:0;position:relative;overflow:auto}
 .near li{display:flex;justify-content:space-between}
 .near a{color:var(--fg)}
 .near span{color:var(--mute)}
+.b-new{background:#111;color:#fff;letter-spacing:.3px}
