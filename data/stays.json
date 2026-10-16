@@ -5,6 +5,90 @@
  },
  "stays": [
   {
+   "id": "aejinsim",
+   "name": "강릉 애진심펜션 (1층 독채)",
+   "source": "search",
+   "area": "강릉시 칠봉로 720",
+   "address": "강원특별자치도 강릉시 칠봉로 720",
+   "type": "mountain",
+   "lat": 37.72992641350418,
+   "lng": 128.86128432130843,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "approx": false,
+   "isNew": true,
+   "archived": false,
+   "price": {
+    "total": 544000,
+    "estimated": true,
+    "note": "1층 419,000(기준 4인) + 추가 5명×25,000 (비수기, 현장 결제)"
+   },
+   "rooms": {
+    "bedrooms": null,
+    "bathrooms": null,
+    "bathroomNote": "방·화장실 수 확인 필요 (월풀스파 있음)",
+    "living": true,
+    "pyeong": null
+   },
+   "capacity": {
+    "base": 4,
+    "max": 10
+   },
+   "parking": "무료 주차",
+   "checkin": "15:00",
+   "checkout": "11:00",
+   "heating": null,
+   "detached": true,
+   "bbq": true,
+   "space": true,
+   "pickup": false,
+   "pros": [
+    "하루 1팀만 받는 1층 단독 사용 · 정원·연못·정자",
+    "월풀스파 무료 (입실~22시)",
+    "개별 바비큐 (숯불 / 동절기는 테이블 버너) 기준 3만원",
+    "보드게임 · 주방 · 불멍 (화로+장작 1.5만원)"
+   ],
+   "cons": [
+    "2층에 펜션 관리인이 상주",
+    "후기가 아직 없음",
+    "가격 높은 편 (9명 약 54만원 추정)",
+    "반려견·픽업 불가",
+    "바비큐·불멍은 예약 후 유선 별도 결제"
+   ],
+   "reviewSummary": "아직 후기가 없는 새 등록 숙소예요 (사진 47장).",
+   "photos": [
+    "https://yaimg.yanolja.com/v5/2026/07/13/07/1280/6a5496b1bb8281.68613686.jpg",
+    "https://yaimg.yanolja.com/v5/2026/07/13/07/1280/6a5496b1a8cc11.05492686.jpg",
+    "https://yaimg.yanolja.com/v5/2026/07/13/07/1280/6a5496bb339f15.55182441.jpg",
+    "https://yaimg.yanolja.com/v5/2026/07/13/07/1280/6a5496bb20f789.09486329.jpg",
+    "https://yaimg.yanolja.com/v5/2026/07/13/07/1280/6a5496b1a647a8.65954408.jpg",
+    "https://yaimg.yanolja.com/v5/2026/07/13/07/1280/6a5496b1b04b04.20098662.jpg"
+   ],
+   "url": "https://nol.yanolja.com/stay/domestic/10069578?verticalCategory=PRODUCT_CATEGORY_KOREA_ACCOMMODATION&checkInDate=2026-11-21&checkOutDate=2026-11-22&adultCount=9",
+   "contact": null,
+   "check": [
+    "방·화장실 개수 (월풀 외)",
+    "2층 관리실 상주 방식 (소음·프라이버시)",
+    "바비큐 방식 (동절기)"
+   ],
+   "sources": [
+    {
+     "label": "야놀자(NOL) 상세 (가격·시설·안내)",
+     "url": "https://nol.yanolja.com/stay/domestic/10069578?verticalCategory=PRODUCT_CATEGORY_KOREA_ACCOMMODATION&checkInDate=2026-11-21&checkOutDate=2026-11-22&adultCount=9"
+    }
+   ],
+   "checkedAt": "2026-10-16",
+   "distSea": 8728,
+   "nearestBeach": "송정해변",
+   "distStore": 205,
+   "nearestStore": "CU 회산솔향점",
+   "distBus": 3155,
+   "nearestBus": "강릉시외버스터미널",
+   "distTrain": 5116,
+   "nearestTrain": "강릉역"
+  },
+  {
    "source": "search",
    "type": "sea",
    "lat": 37.6844181901355,
@@ -569,7 +653,7 @@
    "rooms": {
     "bedrooms": 3,
     "bathrooms": 2,
-    "bathroomNote": "후기 기준 (스윗룸 501) · 확인 필요",
+    "bathroomNote": "숙소 소개에 \"전 객실 오션뷰 화장실2개\" 명시 (야놀자)",
     "living": true,
     "pyeong": null
    },
@@ -581,11 +665,12 @@
    "heating": null,
    "reviewSummary": "리뷰 98개 · 평점 9.6. 청결 칭찬이 가장 많음 (곰팡이·냄새 없음). 사장님 친절, 베란다에서 보는 바다 뷰 만족. 세련된 느낌보다는 대가족이 편히 지내기 좋다는 평.",
    "photos": [
-    "https://image.withstatic.com/property/2025/06/27/b8/b880c7e443644f1b8fbf123399651868.jpg?width=1280&height=1024&format=webp",
-    "https://image.withstatic.com/property/2025/06/27/51/51036ced057c4804aa945582c0136236.jpg?width=1280&height=1024&format=webp",
-    "https://image.withstatic.com/property/2025/06/27/97/973eff2402f8473494f9173c79b0c2c5.jpg?width=1280&height=1024&format=webp",
-    "https://image.withstatic.com/property/2025/06/27/c4/c4b820b9efa54c36a0987b8e936ad5b0.jpg?width=1280&height=1024&format=webp",
-    "https://image.withstatic.com/property/2025/06/27/40/404d54ce9db1429c9809809b94d6022c.jpg?width=1280&height=1024&format=webp"
+    "https://yaimg.yanolja.com/v5/2025/04/20/22/1280/68057044cdc548.27896509.jpg",
+    "https://yaimg.yanolja.com/v5/2025/04/20/22/1280/6805703bc70920.65541607.jpg",
+    "https://yaimg.yanolja.com/v5/2025/04/20/22/1280/6805703bb77c80.01765016.jpg",
+    "https://yaimg.yanolja.com/v5/2025/04/20/22/1280/6805703c08a031.84472760.jpg",
+    "https://yaimg.yanolja.com/v5/2025/04/20/22/1280/6805703bd3db08.68396233.jpg",
+    "https://image.withstatic.com/property/2025/06/27/b8/b880c7e443644f1b8fbf123399651868.jpg?width=1280&height=1024&format=webp"
    ],
    "contact": null,
    "check": [
@@ -625,6 +710,10 @@
     {
      "label": "여기어때 상세 (가격·시설·후기)",
      "url": "https://www.yeogi.com/domestic-accommodations/85780?checkIn=2026-11-21&checkOut=2026-11-22&personal=9"
+    },
+    {
+     "label": "야놀자(NOL) 상세 (객실·바비큐)",
+     "url": "https://nol.yanolja.com/stay/domestic/10052837?verticalCategory=PRODUCT_CATEGORY_KOREA_ACCOMMODATION&checkInDate=2026-11-21&checkOutDate=2026-11-22&adultCount=9"
     }
    ],
    "checkedAt": "2026-10-15",
