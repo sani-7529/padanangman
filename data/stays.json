@@ -27,7 +27,7 @@
    "rooms": {
     "bedrooms": null,
     "bathrooms": null,
-    "bathroomNote": "방·화장실 수 확인 필요 (월풀스파 있음)",
+    "bathroomNote": null,
     "living": true,
     "pyeong": null
    },
@@ -100,7 +100,7 @@
    "rooms": {
     "bedrooms": 3,
     "bathrooms": 3,
-    "bathroomNote": "후기 기준: 1층 방+화장실 2, 2층 방 2+화장실 1 · 확인 필요",
+    "bathroomNote": "후기 기준: 1층 방+화장실 2, 2층 방 2+화장실 1",
     "living": true,
     "pyeong": null
    },
@@ -260,7 +260,7 @@
    "rooms": {
     "bedrooms": 2,
     "bathrooms": 2,
-    "bathroomNote": "후기 기준: 방 2·화장실 2·침대 4 (1·2층 분리) · 확인 필요",
+    "bathroomNote": "후기 기준: 방 2·화장실 2·침대 4 (1·2층 분리)",
     "living": null,
     "pyeong": null
    },
@@ -338,7 +338,7 @@
    "rooms": {
     "bedrooms": null,
     "bathrooms": null,
-    "bathroomNote": "방·화장실 수 확인 필요 (최대 20인 규모)",
+    "bathroomNote": null,
     "living": null,
     "pyeong": null
    },
@@ -415,7 +415,7 @@
    "rooms": {
     "bedrooms": null,
     "bathrooms": null,
-    "bathroomNote": "방·화장실 수 확인 필요",
+    "bathroomNote": null,
     "living": null,
     "pyeong": null
    },
@@ -492,7 +492,7 @@
    "rooms": {
     "bedrooms": null,
     "bathrooms": null,
-    "bathroomNote": "방·화장실 수 확인 필요",
+    "bathroomNote": null,
     "living": null,
     "pyeong": null
    },
@@ -996,7 +996,7 @@
    "rooms": {
     "bedrooms": 2,
     "bathrooms": null,
-    "bathroomNote": "네이버 욕실 2 / 공식 홈페이지 화장실 1 → 확인 필요",
+    "bathroomNote": "네이버 욕실 2 / 공식 홈페이지 화장실 1",
     "living": null,
     "pyeong": 28
    },

@@ -32,25 +32,25 @@ function auto(s) {
   const t = [s.distBus, s.distTrain].filter((d) => d != null);
   if (t.length) {
     const d = Math.min(...t);
-    if (d <= 3000) pros.push(`버스터미널/기차역 가까움 (${m(d)})`);
+    if (d <= 5000) pros.push(`버스터미널/기차역 가까움 (${m(d)})`);
     else if (d > 10000) cons.push(`버스터미널·기차역 멀음 (${m(d)})`);
   }
   return { pros, cons };
 }
-// 필수 조건: 독채 · 바비큐 · 다 같이 쓸 공간 · 역/터미널 가까움(3km 이내 또는 픽업)
+// 필수 조건: 독채 · 바비큐 · 다 같이 쓸 공간 · 역/터미널 가까움(5km 이내 또는 픽업)
 function criteria(s) {
   const d = [s.distBus, s.distTrain].filter((x) => x != null);
-  const transit = s.pickup ? true : d.length ? Math.min(...d) <= 3000 : null;
+  const transit = s.pickup ? true : d.length ? Math.min(...d) <= 5000 : null;
   return [['독채', s.detached], ['바비큐', s.bbq], ['다 같이 쓸 공간', s.space], ['역·터미널', transit]];
 }
 function isBest(s) {
-  if (s.status !== 'ok') return false;
+  if (s.status !== 'ok' || s.archived) return false;
   const v = criteria(s).map((x) => x[1]);
   return !v.includes(false) && v.filter((x) => x === true).length >= 3;
 }
 const bestBadge = (s) => (isBest(s) ? '<span class="badge b-best">THE BEST</span>' : '');
 const seaText = (s) => meters(s.distSea);
-const typeLabel = (t) => (t === 'sea' ? '바다' : t === 'mountain' ? '산' : '위치 확인 필요');
+const typeLabel = (t) => (t === 'sea' ? '바다' : t === 'mountain' ? '산' : '–');
 const typeBadge = (s) => (s.type ? `<span class="badge ${s.type === 'sea' ? 'b-sea' : 'b-mtn'}">${typeLabel(s.type)}</span>` : '');
 const newBadge = (s) => (s.isNew ? '<span class="badge b-new">NEW</span>' : '');
 const oceanBadge = (s) => (s.oceanView ? '<span class="badge b-ocean">오션뷰</span>' : '');
@@ -119,7 +119,7 @@ const cmpBtn = (s) => `<button class="cmp ${state.compare.includes(s.id) ? 'on' 
 
 function facts(s) {
   const r = s.rooms || {};
-  const f = (label, v) => `<span class="f ${v == null ? 'need' : ''}">${label} ${v == null ? '확인 필요' : esc(v)}</span>`;
+  const f = (label, v) => `<span class="f ${v == null ? 'q' : ''}">${label} ${v == null ? '–' : esc(v)}</span>`;
   return [
     f('방', r.bedrooms),
     f('화장실', r.bathrooms),
@@ -130,7 +130,7 @@ function priceHtml(s) {
   const pp = perPerson(s);
   return pp
     ? `<div class="price">${won(pp)}<small>1인 · 총 ${won(s.price.total)}${s.price.estimated ? ' (추정)' : ''}</small></div>`
-    : `<div class="price q">가격 확인 필요</div>`;
+    : `<div class="price q">가격 –</div>`;
 }
 function thumb(s) {
   const p = s.photos?.[0];
@@ -168,8 +168,7 @@ function openSheet(id) {
   const s = state.stays.find((x) => x.id === id);
   if (!s) return;
   const r = s.rooms || {};
-  // 중요한 항목(침실·화장실·공용공간)만 '확인 필요'를 강조, 나머지는 '–'
-  const g = (label, v, imp) => `<div class="g ${v == null ? (imp ? 'need' : 'q') : ''}"><span>${label}</span><b>${v == null ? (imp ? '확인 필요' : '–') : esc(v)}</b></div>`;
+  const g = (label, v) => `<div class="g ${v == null ? 'q' : ''}"><span>${label}</span><b>${v == null ? '–' : esc(v)}</b></div>`;
   const pp = perPerson(s);
   const li = (a) => a.map((x) => `<li>${esc(x)}</li>`).join('');
   $('#sheet').innerHTML = `
@@ -217,7 +216,7 @@ function renderCompare() {
   const items = state.compare.map((id) => state.stays.find((s) => s.id === id)).filter(Boolean);
   $('#cmpCount').textContent = items.length ? `(${items.length})` : '';
   if (!items.length) { $('#view-compare').innerHTML = '<div class="empty">목록에서 “+ 비교”를 눌러 2~4개를 골라 보세요</div>'; return; }
-  const q = (v, fmt = (x) => x, imp) => (v == null ? (imp ? '<span class="need-t">확인 필요</span>' : '<span class="q">–</span>') : esc(fmt(v)));
+  const q = (v, fmt = (x) => x) => (v == null ? '<span class="q">–</span>' : esc(fmt(v)));
   const rows = [
     ['', (s) => `<b>${esc(s.name)}</b><br>${typeBadge(s)} ${badBadge(s)}`],
     ['1인', (s) => q(perPerson(s), won)],
@@ -344,7 +343,7 @@ function openAct(id) {
   if (!a) return;
   const li = (arr) => arr.map((x) => `<li>${esc(x)}</li>`).join('');
   const rows = a.items.map((i) => `<tr><td><b>${esc(i.name)}</b></td>
-    <td>${i.price ? won(i.price) : '<span class="q">확인 필요</span>'}${i.two ? `<br><small class="q">2회권 ${won(i.two)}</small>` : ''}</td>
+    <td>${i.price ? won(i.price) : '<span class="q">–</span>'}${i.two ? `<br><small class="q">2회권 ${won(i.two)}</small>` : ''}</td>
     <td>${i.price ? '≈ ' + won(i.price * CONFIG.headcount) : '–'}</td>
     <td class="q">${esc(i.limit)}</td></tr>`).join('');
   const near = nearStays(a).slice(0, 5);
