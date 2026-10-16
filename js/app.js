@@ -16,6 +16,8 @@ try { state.name = localStorage.getItem('who'); state.compare = JSON.parse(local
 const perPerson = (s) => (s.price?.total ? Math.round(s.price.total / CONFIG.headcount) : null);
 const isBad = (s) => s.status !== 'ok';
 const meters = (n) => (n == null ? null : n.toLocaleString('ko-KR') + 'm');
+const transit = (d, name) => (d == null ? null : `${name} · ${meters(d)}`);
+const nearTransit = (s) => [s.distBus, s.distTrain].some((d) => d != null && d <= 3000);
 const seaText = (s) => meters(s.distSea);
 const typeLabel = (t) => (t === 'sea' ? '바다' : t === 'mountain' ? '산' : '위치 확인 필요');
 const typeBadge = (s) => `<span class="badge ${s.type === 'sea' ? 'b-sea' : s.type === 'mountain' ? 'b-mtn' : 'b-unk'}">${typeLabel(s.type)}</span>`;
@@ -152,14 +154,16 @@ function openSheet(id) {
       ${g('인원', `기준 ${s.capacity.base} · 최대 ${s.capacity.max}`)}
       ${g('바다까지', seaText(s))}
       ${g('편의점', meters(s.distStore))}
+      ${g('버스터미널', transit(s.distBus, s.nearestBus))}
+      ${g('기차역', transit(s.distTrain, s.nearestTrain))}
       ${g('주차', s.parking)}
       ${g('난방', s.heating)}
       ${g('체크인', s.checkin)}
       ${g('체크아웃', s.checkout)}
     </div>
     ${r.bathroomNote ? `<div class="alert" style="background:#fff8e6;color:#9a6700">${esc(r.bathroomNote)}</div>` : ''}
-    ${s.pros?.length ? `<div class="sec"><h3>있어요</h3><ul class="pl">${li(s.pros)}</ul></div>` : ''}
-    ${s.cons?.length ? `<div class="sec"><h3>아쉬워요</h3><ul class="mi">${li(s.cons)}</ul></div>` : ''}
+    ${s.pros?.length || nearTransit(s) ? `<div class="sec"><h3>있어요</h3><ul class="pl">${li([...(s.pros || []), ...(nearTransit(s) ? ['버스터미널/기차역 3km 이내'] : [])])}</ul></div>` : ''}
+    ${s.cons?.length || (s.distBus != null && !nearTransit(s)) ? `<div class="sec"><h3>아쉬워요</h3><ul class="mi">${li([...(s.cons || []), ...(s.distBus != null && !nearTransit(s) ? ['버스터미널·기차역 모두 3km 넘게 멀음 (대중교통 불편)'] : [])])}</ul></div>` : ''}
     ${s.check?.length ? `<div class="sec"><h3>확인할 것</h3><ul class="ck">${li(s.check)}</ul></div>` : ''}
     ${sources(s)}
     ${s.reviewSummary ? `<div class="sec"><h3>후기 요약</h3><div class="rev">${esc(s.reviewSummary)}</div></div>` : ''}
@@ -191,6 +195,8 @@ function renderCompare() {
     ['화장실', (s) => q(s.rooms.bathrooms)],
     ['공용공간', (s) => q(s.rooms.living, (x) => (x ? '있음' : '없음'))],
     ['인원', (s) => `${s.capacity.base}~${s.capacity.max}명`],
+    ['버스터미널', (s) => q(transit(s.distBus, s.nearestBus))],
+    ['기차역', (s) => q(transit(s.distTrain, s.nearestTrain))],
     ['주차', (s) => q(s.parking)],
     ['하트', (s) => `♥ ${(state.hearts[s.id] || []).length}`],
     ['있어요', (s) => (s.pros || []).map((x) => '+ ' + esc(x)).join('<br>')],

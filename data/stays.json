@@ -76,7 +76,11 @@
      "url": "https://www.yeogi.com/domestic-accommodations/75477?checkIn=2026-11-21&checkOut=2026-11-22&personal=9"
     }
    ],
-   "checkedAt": "2026-10-15"
+   "checkedAt": "2026-10-15",
+   "distBus": 7927,
+   "nearestBus": "횡계시외버스터미널",
+   "distTrain": 13429,
+   "nearestTrain": "강릉역"
   },
   {
    "source": "search",
@@ -147,7 +151,11 @@
      "url": "https://www.yeogi.com/domestic-accommodations/85780?checkIn=2026-11-21&checkOut=2026-11-22&personal=9"
     }
    ],
-   "checkedAt": "2026-10-15"
+   "checkedAt": "2026-10-15",
+   "distBus": 14448,
+   "nearestBus": "동해시종합버스터미널",
+   "distTrain": 4837,
+   "nearestTrain": "정동진역"
   },
   {
    "source": "search",
@@ -223,7 +231,11 @@
      "url": "https://naver.me/F2LROm0A"
     }
    ],
-   "checkedAt": "2026-10-15"
+   "checkedAt": "2026-10-15",
+   "distBus": 11557,
+   "nearestBus": "삼척고속버스터미널",
+   "distTrain": 5486,
+   "nearestTrain": "근덕역"
   },
   {
    "source": "search",
@@ -294,7 +306,11 @@
      "url": "https://www.yeogi.com/domestic-accommodations/82795?checkIn=2026-11-21&checkOut=2026-11-22&personal=9"
     }
    ],
-   "checkedAt": "2026-10-15"
+   "checkedAt": "2026-10-15",
+   "distBus": 5714,
+   "nearestBus": "동해시종합버스터미널",
+   "distTrain": 3568,
+   "nearestTrain": "묵호역"
   },
   {
    "id": "sunstay",
@@ -369,7 +385,11 @@
    ],
    "checkedAt": "2026-10-15",
    "nearestBeach": "작은후진해변",
-   "nearestStore": "세븐일레븐 삼척새천년비치점"
+   "nearestStore": "세븐일레븐 삼척새천년비치점",
+   "distBus": 2671,
+   "nearestBus": "삼척고속버스터미널",
+   "distTrain": 771,
+   "nearestTrain": "삼척해변역"
   },
   {
    "id": "buyeon-c",
@@ -437,7 +457,11 @@
      "url": "https://naver.me/GNJ5Bs8C"
     }
    ],
-   "checkedAt": "2026-10-15"
+   "checkedAt": "2026-10-15",
+   "distBus": 16866,
+   "nearestBus": "주문진공영버스터미널",
+   "distTrain": null,
+   "nearestTrain": null
   },
   {
    "id": "buyeon-b",
@@ -497,7 +521,11 @@
      "url": "https://naver.me/GNJ5Bs8C"
     }
    ],
-   "checkedAt": "2026-10-15"
+   "checkedAt": "2026-10-15",
+   "distBus": 16866,
+   "nearestBus": "주문진공영버스터미널",
+   "distTrain": null,
+   "nearestTrain": null
   },
   {
    "id": "sagimak",
@@ -552,7 +580,11 @@
      "url": "https://www.airbnb.co.kr/rooms/1386831928148514288"
     }
    ],
-   "checkedAt": "2026-10-15"
+   "checkedAt": "2026-10-15",
+   "distBus": 10039,
+   "nearestBus": "강릉시외버스터미널",
+   "distTrain": 11680,
+   "nearestTrain": "강릉역"
   },
   {
    "id": "hyuga",
@@ -611,7 +643,11 @@
      "url": "https://naver.me/FiPZ9A4x"
     }
    ],
-   "checkedAt": "2026-10-15"
+   "checkedAt": "2026-10-15",
+   "distBus": 5642,
+   "nearestBus": "강릉시외버스터미널",
+   "distTrain": 4979,
+   "nearestTrain": "강릉역"
   }
  ]
 }

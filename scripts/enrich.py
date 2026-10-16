@@ -39,6 +39,14 @@ for s in d['stays']:
               if CHAIN.search(p['place_name'])]
     if stores:
         s['distStore'] = int(stores[0]['distance']); s['nearestStore'] = stores[0]['place_name']
+    def nearest(query, pat, kw):
+        for b in api('search/keyword.json', query=query, x=x, y=y, radius=20000, sort='distance', size=15):
+            if re.search(pat, b['place_name']) and kw in b.get('category_name', ''):
+                return int(b['distance']), b['place_name']
+        return None, None
+    s['distBus'], s['nearestBus'] = nearest('버스터미널', r'터미널$', '버스')
+    s['distTrain'], s['nearestTrain'] = nearest('기차역', r'역$', '기차')
+    print(s['name'], 'bus', s['distBus'], s['nearestBus'], 'train', s['distTrain'], s['nearestTrain'])
     print(s['name'], s['lat'], s['lng'], 'sea', s.get('distSea'), s.get('nearestBeach'), 'store', s.get('distStore'), s.get('nearestStore'))
 json.dump(d, open(P, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 
