@@ -18,6 +18,25 @@ const isBad = (s) => s.status !== 'ok';
 const meters = (n) => (n == null ? null : n.toLocaleString('ko-KR') + 'm');
 const transit = (d, name) => (d == null ? null : `${name} · ${meters(d)}`);
 const nearTransit = (s) => [s.distBus, s.distTrain].some((d) => d != null && d <= 3000);
+// 거리 기준으로 자동 +/- (가까우면 +, 멀면 -)
+function auto(s) {
+  const pros = [], cons = [], m = (n) => n.toLocaleString('ko-KR') + 'm';
+  if (s.type === 'sea' && s.distSea != null) {
+    if (s.distSea <= 1000) pros.push(`바다 가까움 (${m(s.distSea)})`);
+    else if (s.distSea > 3000) cons.push(`바다에서 멀음 (${m(s.distSea)})`);
+  }
+  if (s.distStore != null) {
+    if (s.distStore <= 1000) pros.push(`편의점 가까움 (${m(s.distStore)})`);
+    else if (s.distStore > 3000) cons.push(`편의점 멀음 (${m(s.distStore)})`);
+  }
+  const t = [s.distBus, s.distTrain].filter((d) => d != null);
+  if (t.length) {
+    const d = Math.min(...t);
+    if (d <= 3000) pros.push(`버스터미널/기차역 가까움 (${m(d)})`);
+    else if (d > 10000) cons.push(`버스터미널·기차역 멀음 (${m(d)})`);
+  }
+  return { pros, cons };
+}
 const seaText = (s) => meters(s.distSea);
 const typeLabel = (t) => (t === 'sea' ? '바다' : t === 'mountain' ? '산' : '위치 확인 필요');
 const typeBadge = (s) => `<span class="badge ${s.type === 'sea' ? 'b-sea' : s.type === 'mountain' ? 'b-mtn' : 'b-unk'}">${typeLabel(s.type)}</span>`;
@@ -162,8 +181,8 @@ function openSheet(id) {
       ${g('체크아웃', s.checkout)}
     </div>
     ${r.bathroomNote ? `<div class="alert" style="background:#fff8e6;color:#9a6700">${esc(r.bathroomNote)}</div>` : ''}
-    ${s.pros?.length || nearTransit(s) ? `<div class="sec"><h3>있어요</h3><ul class="pl">${li([...(s.pros || []), ...(nearTransit(s) ? ['버스터미널/기차역 3km 이내'] : [])])}</ul></div>` : ''}
-    ${s.cons?.length || (s.distBus != null && !nearTransit(s)) ? `<div class="sec"><h3>아쉬워요</h3><ul class="mi">${li([...(s.cons || []), ...(s.distBus != null && !nearTransit(s) ? ['버스터미널·기차역 모두 3km 넘게 멀음 (대중교통 불편)'] : [])])}</ul></div>` : ''}
+    ${(s.pros?.length || auto(s).pros.length) ? `<div class="sec"><h3>있어요</h3><ul class="pl">${li([...(s.pros || []), ...auto(s).pros])}</ul></div>` : ''}
+    ${(s.cons?.length || auto(s).cons.length) ? `<div class="sec"><h3>아쉬워요</h3><ul class="mi">${li([...(s.cons || []), ...auto(s).cons])}</ul></div>` : ''}
     ${s.check?.length ? `<div class="sec"><h3>확인할 것</h3><ul class="ck">${li(s.check)}</ul></div>` : ''}
     ${sources(s)}
     ${s.reviewSummary ? `<div class="sec"><h3>후기 요약</h3><div class="rev">${esc(s.reviewSummary)}</div></div>` : ''}
