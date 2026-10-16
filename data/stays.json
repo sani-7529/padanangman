@@ -5,11 +5,74 @@
  },
  "stays": [
   {
-   "id": "joyful",
-   "name": "강릉 조이풀펜션",
-   "source": "search",
-   "area": "강릉시 강동면 정동3길 32-2",
-   "address": "강원 강릉시 강동면 정동3길 32-2",
+   "source": "ai",
+   "type": "sea",
+   "lat": 37.8041654728728,
+   "lng": 128.902836134012,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "approx": false,
+   "isNew": true,
+   "archived": false,
+   "rooms": {
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "bathroomNote": "욕실 2공간 (같은 공간 중복 계산 안 함)",
+    "living": null,
+    "pyeong": null
+   },
+   "parking": null,
+   "distSea": 655,
+   "distStore": 33,
+   "checkin": null,
+   "checkout": null,
+   "heating": "온돌방 2개",
+   "detached": null,
+   "bbq": true,
+   "space": null,
+   "pickup": false,
+   "reviewSummary": null,
+   "photos": [],
+   "contact": null,
+   "check": [
+    "독채 여부 · 거실",
+    "바비큐 9명 비용"
+   ],
+   "pros": [
+    "가격 가장 저렴 (9명 약 21만원 · 1인 약 2.3만원)",
+    "온돌방 2 · 욕실 2",
+    "바비큐 가능"
+   ],
+   "cons": [
+    "9명 바비큐 이용료 미확인",
+    "노래방 별도 (외부 업체)"
+   ],
+   "sources": [],
+   "checkedAt": "2026-10-16",
+   "id": "naiad",
+   "name": "강릉 나이아드펜션 (투룸24)",
+   "area": "강릉시 경포로463번길 33",
+   "address": "강원특별자치도 강릉시 경포로463번길 33",
+   "price": {
+    "total": 210000,
+    "estimated": true,
+    "note": "기본 200,000(8명) + 추가 1명×10,000"
+   },
+   "capacity": {
+    "base": 8,
+    "max": 12
+   },
+   "url": "",
+   "nearestBeach": "경포해수욕장",
+   "nearestStore": "세븐일레븐 강릉경포그린점",
+   "distBus": 5858,
+   "nearestBus": "강릉고속버스터미널",
+   "distTrain": 4410,
+   "nearestTrain": "강릉역"
+  },
+  {
+   "source": "ai",
    "type": null,
    "lat": null,
    "lng": null,
@@ -18,6 +81,138 @@
    "seaNote": null,
    "approx": false,
    "isNew": true,
+   "archived": false,
+   "rooms": {
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "bathroomNote": "욕실 2공간",
+    "living": null,
+    "pyeong": null
+   },
+   "parking": null,
+   "distSea": null,
+   "distStore": null,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "detached": null,
+   "bbq": true,
+   "space": null,
+   "pickup": false,
+   "reviewSummary": null,
+   "photos": [],
+   "contact": null,
+   "check": [
+    "정확한 주소",
+    "독채 여부"
+   ],
+   "pros": [
+    "숙소 내 노래방",
+    "침실 2 · 욕실 2",
+    "바비큐 가능 (7인 이상 5만원)"
+   ],
+   "cons": [
+    "양양이라 강릉에서 멀음",
+    "황토방은 1박 10만원 별도",
+    "바비큐 비용 별도"
+   ],
+   "sources": [
+    {
+     "label": "네이버 예약 (가격)",
+     "url": "https://booking.naver.com/booking/3/bizes/1063902/items/5595320?startDate=2026-11-21&endDate=2026-11-22"
+    }
+   ],
+   "checkedAt": "2026-10-16",
+   "id": "cozy",
+   "name": "양양 코지하우스",
+   "area": "양양군 현남면",
+   "address": null,
+   "price": {
+    "total": 390000,
+    "estimated": true,
+    "note": "기본 290,000(4명) + 추가 5명×20,000"
+   },
+   "capacity": {
+    "base": 4,
+    "max": 12
+   },
+   "url": "https://booking.naver.com/booking/3/bizes/1063902/items/5595320?startDate=2026-11-21&endDate=2026-11-22"
+  },
+  {
+   "source": "ai",
+   "type": "mountain",
+   "lat": null,
+   "lng": null,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "approx": false,
+   "isNew": true,
+   "archived": false,
+   "rooms": {
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "bathroomNote": "욕실 2공간",
+    "living": null,
+    "pyeong": 35
+   },
+   "parking": null,
+   "distSea": null,
+   "distStore": null,
+   "checkin": null,
+   "checkout": null,
+   "heating": "온돌",
+   "detached": null,
+   "bbq": true,
+   "space": null,
+   "pickup": false,
+   "reviewSummary": null,
+   "photos": [],
+   "contact": null,
+   "check": [
+    "정확한 주소",
+    "독채 여부"
+   ],
+   "pros": [
+    "침실 3 · 욕실 2 · 35평 온돌",
+    "같은 객실이 3개라 선택지 많음 (A·B·C)",
+    "바비큐통 무료"
+   ],
+   "cons": [
+    "대관령이라 강릉에서 멀음",
+    "숯·철망은 직접 준비, 사전예약"
+   ],
+   "sources": [],
+   "checkedAt": "2026-10-16",
+   "id": "sweethill",
+   "name": "평창 스위트힐펜션 (1단지 35평)",
+   "area": "평창군 대관령",
+   "address": null,
+   "price": {
+    "total": 400000,
+    "estimated": true,
+    "note": "기본 380,000(7명) + 추가 2명×10,000 · A·B·C 3객실 동일"
+   },
+   "capacity": {
+    "base": 7,
+    "max": 10
+   },
+   "url": ""
+  },
+  {
+   "id": "joyful",
+   "name": "강릉 조이풀펜션",
+   "source": "search",
+   "area": "강릉시 강동면 정동3길 32-2",
+   "address": "강원 강릉시 강동면 정동3길 32-2",
+   "type": null,
+   "lat": 37.6864279371309,
+   "lng": 129.034942945308,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "approx": false,
+   "isNew": false,
    "archived": false,
    "price": {
     "total": null,
@@ -35,8 +230,8 @@
     "max": null
    },
    "parking": null,
-   "distSea": null,
-   "distStore": null,
+   "distSea": 325,
+   "distStore": 151,
    "checkin": null,
    "checkout": null,
    "heating": null,
@@ -59,7 +254,13 @@
      "url": "https://naver.me/5YFd558Q"
     }
    ],
-   "checkedAt": "2026-10-16"
+   "checkedAt": "2026-10-16",
+   "nearestBeach": "정동진 해변",
+   "nearestStore": "CU 정동진모래시계점",
+   "distBus": 15639,
+   "nearestBus": "강릉고속버스터미널",
+   "distTrain": 589,
+   "nearestTrain": "정동진역"
   },
   {
    "id": "aejinsim",
@@ -74,7 +275,7 @@
    "oceanView": null,
    "seaNote": null,
    "approx": false,
-   "isNew": true,
+   "isNew": false,
    "archived": false,
    "price": {
     "total": 544000,
@@ -224,7 +425,7 @@
    "nearestBus": "강릉고속버스터미널",
    "distTrain": 1850,
    "nearestTrain": "정동진역",
-   "isNew": true,
+   "isNew": false,
    "detached": true,
    "bbq": true,
    "space": true,
@@ -302,7 +503,7 @@
    "nearestBus": "강릉시외버스터미널",
    "distTrain": 6822,
    "nearestTrain": "강릉역",
-   "isNew": true,
+   "isNew": false,
    "detached": true,
    "bbq": true,
    "space": true,
@@ -380,7 +581,7 @@
    "nearestBus": "강릉시외버스터미널",
    "distTrain": 7122,
    "nearestTrain": "강릉역",
-   "isNew": true,
+   "isNew": false,
    "detached": null,
    "bbq": true,
    "space": null,
@@ -457,7 +658,7 @@
    "nearestBus": "강릉고속버스터미널",
    "distTrain": 4831,
    "nearestTrain": "강릉역",
-   "isNew": true,
+   "isNew": false,
    "detached": null,
    "bbq": true,
    "space": true,
@@ -534,7 +735,7 @@
    "nearestBus": "강릉고속버스터미널",
    "distTrain": 1887,
    "nearestTrain": "강릉역",
-   "isNew": true,
+   "isNew": false,
    "detached": true,
    "bbq": true,
    "space": null,
@@ -612,7 +813,7 @@
    "nearestBus": "강릉고속버스터미널",
    "distTrain": 2032,
    "nearestTrain": "정동진역",
-   "isNew": true,
+   "isNew": false,
    "detached": true,
    "bbq": false,
    "space": null,

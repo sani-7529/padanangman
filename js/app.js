@@ -205,7 +205,7 @@ function openSheet(id) {
     ${s.reviewSummary ? `<div class="sec"><h3>후기 요약</h3><div class="rev">${esc(s.reviewSummary)}</div></div>` : ''}
     <div class="actions">
       ${heartBtn(s)}${cmpBtn(s)}
-      <a class="btn" href="${esc(s.url)}" target="_blank" rel="noopener">예약 페이지</a>
+      ${s.url ? `<a class="btn" href="${esc(s.url)}" target="_blank" rel="noopener">예약 페이지</a>` : ''}
       ${s.contact ? `<a class="btn ghost" href="tel:${esc(s.contact)}">전화</a>` : ''}
     </div>`;
   $('#sheet').dataset.id = id;
@@ -237,7 +237,7 @@ function renderCompare() {
     ['하트', (s) => `♥ ${(state.hearts[s.id] || []).length}`],
     ['있어요', (s) => (s.pros || []).map((x) => '+ ' + esc(x)).join('<br>')],
     ['아쉬워요', (s) => (s.cons || []).map((x) => '– ' + esc(x)).join('<br>')],
-    ['', (s) => `<a href="#" data-open="${s.id}">자세히</a> · <a href="${esc(s.url)}" target="_blank" rel="noopener">예약</a>`],
+    ['', (s) => `<a href="#" data-open="${s.id}">자세히</a> · ${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">예약</a>` : ''}`],
   ];
   $('#view-compare').innerHTML = `<div class="cmpwrap"><table>${rows.map(([h, fn]) => `<tr><th>${h}</th>${items.map((s) => `<td>${fn(s)}</td>`).join('')}</tr>`).join('')}</table></div>`;
 }
