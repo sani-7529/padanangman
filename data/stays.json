@@ -5,7 +5,11 @@
  },
  "stays": [
   {
+   "id": "naiad",
+   "name": "강릉 나이아드펜션 (투룸24)",
    "source": "ai",
+   "area": "강릉시 경포로463번길 33",
+   "address": "강원특별자치도 강릉시 경포로463번길 33",
    "type": "sea",
    "lat": 37.8041654728728,
    "lng": 128.902836134012,
@@ -15,12 +19,21 @@
    "approx": false,
    "isNew": true,
    "archived": false,
+   "price": {
+    "total": 210000,
+    "estimated": true,
+    "note": "기본 200,000(8명) + 추가 1명×10,000"
+   },
    "rooms": {
     "bedrooms": 2,
     "bathrooms": 2,
     "bathroomNote": "욕실 2공간 (같은 공간 중복 계산 안 함)",
     "living": null,
     "pyeong": null
+   },
+   "capacity": {
+    "base": 8,
+    "max": 12
    },
    "parking": null,
    "distSea": 655,
@@ -32,38 +45,30 @@
    "bbq": true,
    "space": null,
    "pickup": false,
-   "reviewSummary": null,
-   "photos": [],
-   "contact": null,
-   "check": [
-    "독채 여부 · 거실",
-    "바비큐 9명 비용"
-   ],
+   "karaoke": {
+    "name": "하바나노래연습장",
+    "km": 0.084
+   },
    "pros": [
-    "가격 가장 저렴 (9명 약 21만원 · 1인 약 2.3만원)",
+    "가격 가장 저렴 (1인 약 2.3만원)",
     "온돌방 2 · 욕실 2",
     "바비큐 가능"
    ],
    "cons": [
-    "9명 바비큐 이용료 미확인",
-    "노래방 별도 (외부 업체)"
+    "9명 바비큐 이용료 미확인"
    ],
-   "sources": [],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://booking.naver.com/booking/3/bizes/1630705/items/7573757?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": null,
+   "check": [],
+   "sources": [
+    {
+     "label": "네이버 예약 (가격·객실)",
+     "url": "https://booking.naver.com/booking/3/bizes/1630705/items/7573757?startDate=2026-11-21&endDate=2026-11-22"
+    }
+   ],
    "checkedAt": "2026-10-16",
-   "id": "naiad",
-   "name": "강릉 나이아드펜션 (투룸24)",
-   "area": "강릉시 경포로463번길 33",
-   "address": "강원특별자치도 강릉시 경포로463번길 33",
-   "price": {
-    "total": 210000,
-    "estimated": true,
-    "note": "기본 200,000(8명) + 추가 1명×10,000"
-   },
-   "capacity": {
-    "base": 8,
-    "max": 12
-   },
-   "url": "",
    "nearestBeach": "경포해수욕장",
    "nearestStore": "세븐일레븐 강릉경포그린점",
    "distBus": 5858,
@@ -72,7 +77,154 @@
    "nearestTrain": "강릉역"
   },
   {
+   "id": "songrim",
+   "name": "평창 송림 독채펜션 (단체객실)",
    "source": "ai",
+   "area": "평창군 진부면",
+   "address": "강원특별자치도 평창군 진부면 화의리 28",
+   "type": "mountain",
+   "lat": 37.55120710637177,
+   "lng": 128.55712289153482,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "approx": false,
+   "isNew": true,
+   "archived": false,
+   "price": {
+    "total": 320000,
+    "estimated": true,
+    "note": "기본 300,000(8명) + 추가 1명×20,000"
+   },
+   "rooms": {
+    "bedrooms": 5,
+    "bathrooms": 2,
+    "bathroomNote": "욕실 2공간 (같은 공간 중복 계산 안 함)",
+    "living": null,
+    "pyeong": null
+   },
+   "capacity": {
+    "base": 8,
+    "max": 12
+   },
+   "parking": null,
+   "distSea": null,
+   "distStore": 9274,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "detached": false,
+   "bbq": true,
+   "space": null,
+   "pickup": false,
+   "karaoke": {
+    "inside": true
+   },
+   "pros": [
+    "숙소 내 노래방",
+    "침실 5 · 욕실 2"
+   ],
+   "cons": [
+    "2층 전체 사용, 건물 전체 독채는 아님",
+    "9명 바비큐 요금 안내가 달라 문의 필요",
+    "평창이라 강릉에서 멀음"
+   ],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://booking.naver.com/booking/3/bizes/1580656/items/7369157?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": null,
+   "check": [],
+   "sources": [
+    {
+     "label": "네이버 예약 (가격·객실)",
+     "url": "https://booking.naver.com/booking/3/bizes/1580656/items/7369157?startDate=2026-11-21&endDate=2026-11-22"
+    }
+   ],
+   "checkedAt": "2026-10-16",
+   "nearestStore": "GS25 평창서울대점",
+   "distBus": 9446,
+   "nearestBus": "진부시외버스터미널",
+   "distTrain": 10276,
+   "nearestTrain": "진부(오대산)역"
+  },
+  {
+   "id": "nowanna",
+   "name": "양양 너와나펜션 (너와나A)",
+   "source": "ai",
+   "area": "양양군 현남면",
+   "address": "강원특별자치도 양양군 현남면 지경리 1-10",
+   "type": "sea",
+   "lat": 37.919884093097046,
+   "lng": 128.80512623855958,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "approx": false,
+   "isNew": true,
+   "archived": false,
+   "price": {
+    "total": 330000,
+    "estimated": true,
+    "note": "기본 250,000(5명) + 추가 4명×20,000"
+   },
+   "rooms": {
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "bathroomNote": "욕실 2공간 (같은 공간 중복 계산 안 함)",
+    "living": null,
+    "pyeong": null
+   },
+   "capacity": {
+    "base": 5,
+    "max": 15
+   },
+   "parking": null,
+   "distSea": 451,
+   "distStore": 132,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "detached": true,
+   "bbq": true,
+   "space": null,
+   "pickup": false,
+   "karaoke": {
+    "name": "씽씽동전노래연습장",
+    "km": 3.489
+   },
+   "pros": [
+    "독채 · 침실 4 · 욕실 2",
+    "개별 바비큐 시설 무료 (숯·석쇠 직접 준비)"
+   ],
+   "cons": [
+    "양양이라 강릉에서 멀음",
+    "바비큐 사전 문의"
+   ],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://booking.naver.com/booking/3/bizes/1554687/items/7264424?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": null,
+   "check": [],
+   "sources": [
+    {
+     "label": "네이버 예약 (가격·객실)",
+     "url": "https://booking.naver.com/booking/3/bizes/1554687/items/7264424?startDate=2026-11-21&endDate=2026-11-22"
+    }
+   ],
+   "checkedAt": "2026-10-16",
+   "nearestBeach": "지경리해수욕장",
+   "nearestStore": "이마트24 남양양IC점",
+   "distBus": 4331,
+   "nearestBus": "주문진공영버스터미널",
+   "distTrain": 19151,
+   "nearestTrain": "강릉역"
+  },
+  {
+   "id": "sonamu",
+   "name": "강릉 주문진 소나무펜션 (1층)",
+   "source": "ai",
+   "area": "강릉시 주문진",
+   "address": "",
    "type": null,
    "lat": null,
    "lng": null,
@@ -82,12 +234,301 @@
    "approx": false,
    "isNew": true,
    "archived": false,
+   "price": {
+    "total": 350000,
+    "estimated": true,
+    "note": "기본 350,000(10명) + 추가 0원"
+   },
    "rooms": {
     "bedrooms": 2,
     "bathrooms": 2,
-    "bathroomNote": "욕실 2공간",
+    "bathroomNote": "욕실 2공간 (같은 공간 중복 계산 안 함)",
     "living": null,
     "pyeong": null
+   },
+   "capacity": {
+    "base": 10,
+    "max": 15
+   },
+   "parking": null,
+   "distSea": null,
+   "distStore": null,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "detached": false,
+   "bbq": true,
+   "space": null,
+   "pickup": false,
+   "karaoke": {
+    "name": "23인의태극전사노래연습장",
+    "km": 4.857
+   },
+   "pros": [
+    "기준 10명이라 추가요금 없음",
+    "침실 2 · 욕실 2",
+    "개별 바비큐장, 우천에도 가능"
+   ],
+   "cons": [
+    "건물 전체 독채는 아님",
+    "바비큐 숯·그릴 2만원 + 추가 5명×5천원 = 4.5만원"
+   ],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://booking.naver.com/booking/3/bizes/315198/items/3315485?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": null,
+   "check": [],
+   "sources": [
+    {
+     "label": "네이버 예약 (가격·객실)",
+     "url": "https://booking.naver.com/booking/3/bizes/315198/items/3315485?startDate=2026-11-21&endDate=2026-11-22"
+    }
+   ],
+   "checkedAt": "2026-10-16"
+  },
+  {
+   "id": "buyeonps",
+   "name": "강릉 부연펜션 (201호 가족)",
+   "source": "ai",
+   "area": "강릉시 저동",
+   "address": "강원특별자치도 강릉시 저동 677-14",
+   "type": "sea",
+   "lat": 37.7963389253614,
+   "lng": 128.891932459178,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "approx": false,
+   "isNew": true,
+   "archived": false,
+   "price": {
+    "total": 359000,
+    "estimated": true,
+    "note": "기본 259,000(4명) + 추가 5명×20,000"
+   },
+   "rooms": {
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "bathroomNote": "욕실 2공간 (같은 공간 중복 계산 안 함)",
+    "living": null,
+    "pyeong": null
+   },
+   "capacity": {
+    "base": 4,
+    "max": 15
+   },
+   "parking": null,
+   "distSea": 1791,
+   "distStore": 1085,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "detached": null,
+   "bbq": true,
+   "space": null,
+   "pickup": false,
+   "karaoke": {
+    "name": "하바나노래연습장",
+    "km": 1.377
+   },
+   "pros": [
+    "침실 2 · 욕실 2",
+    "공용 바비큐 + 전기그릴(인원 무관 1세트 2만원)"
+   ],
+   "cons": [
+    "독채 표기 아님",
+    "바비큐 공용 숯·그릴 3만원 + 추가 5명×5천원 = 5.5만원"
+   ],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://booking.naver.com/booking/3/bizes/1495950/items/7054024?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": null,
+   "check": [],
+   "sources": [
+    {
+     "label": "네이버 예약 (가격·객실)",
+     "url": "https://booking.naver.com/booking/3/bizes/1495950/items/7054024?startDate=2026-11-21&endDate=2026-11-22"
+    }
+   ],
+   "checkedAt": "2026-10-16",
+   "nearestBeach": "경포해수욕장",
+   "nearestStore": "GS25 뉴경포현대점",
+   "distBus": 4748,
+   "nearestBus": "강릉고속버스터미널",
+   "distTrain": 3596,
+   "nearestTrain": "강릉역"
+  },
+  {
+   "id": "athum",
+   "name": "강릉 아썸 스파펜션 (DUPLEX6)",
+   "source": "ai",
+   "area": "강릉시 안현동",
+   "address": "강원특별자치도 강릉시 안현동 786-1",
+   "type": "mountain",
+   "lat": 37.80180160249682,
+   "lng": 128.8651634129068,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "approx": false,
+   "isNew": true,
+   "archived": false,
+   "price": {
+    "total": 359000,
+    "estimated": true,
+    "note": "기본 299,000(6명) + 추가 3명×20,000"
+   },
+   "rooms": {
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "bathroomNote": "욕실 2공간 (같은 공간 중복 계산 안 함)",
+    "living": null,
+    "pyeong": null
+   },
+   "capacity": {
+    "base": 6,
+    "max": 10
+   },
+   "parking": null,
+   "distSea": 2975,
+   "distStore": 1449,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "detached": null,
+   "bbq": true,
+   "space": null,
+   "pickup": false,
+   "karaoke": {
+    "name": "힐노래연습장",
+    "km": 2.051
+   },
+   "pros": [
+    "침실 2 · 욕실 2 · 스파펜션"
+   ],
+   "cons": [
+    "바비큐: 전날 신청, 강풍 시 불가 (개별 5.5만원)"
+   ],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://booking.naver.com/booking/3/bizes/1411079/items/6745589?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": null,
+   "check": [],
+   "sources": [
+    {
+     "label": "네이버 예약 (가격·객실)",
+     "url": "https://booking.naver.com/booking/3/bizes/1411079/items/6745589?startDate=2026-11-21&endDate=2026-11-22"
+    }
+   ],
+   "checkedAt": "2026-10-16",
+   "nearestBeach": "순포해수욕장",
+   "nearestStore": "CU 강릉물류센터포켓점",
+   "distBus": 5369,
+   "nearestBus": "강릉시외버스터미널",
+   "distTrain": 5133,
+   "nearestTrain": "강릉역"
+  },
+  {
+   "id": "soopsok",
+   "name": "평창 숲속의별들펜션 (올리브)",
+   "source": "ai",
+   "area": "평창군 대관령면",
+   "address": "강원특별자치도 평창군 대관령면 용산리 248",
+   "type": "mountain",
+   "lat": 37.6638656799336,
+   "lng": 128.662795645103,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "approx": false,
+   "isNew": true,
+   "archived": false,
+   "price": {
+    "total": 360000,
+    "estimated": true,
+    "note": "기본 300,000(6명) + 추가 3명×20,000"
+   },
+   "rooms": {
+    "bedrooms": 1,
+    "bathrooms": 2,
+    "bathroomNote": "욕실 2공간 (같은 공간 중복 계산 안 함)",
+    "living": null,
+    "pyeong": null
+   },
+   "capacity": {
+    "base": 6,
+    "max": 10
+   },
+   "parking": null,
+   "distSea": null,
+   "distStore": 163,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "detached": null,
+   "bbq": true,
+   "space": null,
+   "pickup": false,
+   "karaoke": {
+    "name": "알펜노래연습장",
+    "km": 0.166
+   },
+   "pros": [
+    "욕실 2"
+   ],
+   "cons": [
+    "침실 1개뿐",
+    "바비큐 7천원×9명 + 동절기 필수 장작 2만원 = 8.3만원",
+    "평창이라 강릉에서 멀음"
+   ],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://booking.naver.com/booking/3/bizes/1359353/items/6565657?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": null,
+   "check": [],
+   "sources": [
+    {
+     "label": "네이버 예약 (가격·객실)",
+     "url": "https://booking.naver.com/booking/3/bizes/1359353/items/6565657?startDate=2026-11-21&endDate=2026-11-22"
+    }
+   ],
+   "checkedAt": "2026-10-16",
+   "nearestStore": "세븐일레븐 횡계용산점",
+   "distBus": 3861,
+   "nearestBus": "횡계시외버스터미널",
+   "distTrain": 8138,
+   "nearestTrain": "진부(오대산)역"
+  },
+  {
+   "id": "pinehill",
+   "name": "강릉 파인힐세잔 (세잔)",
+   "source": "ai",
+   "area": "강릉시 사천면",
+   "address": "",
+   "type": null,
+   "lat": null,
+   "lng": null,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "approx": false,
+   "isNew": true,
+   "archived": false,
+   "price": {
+    "total": 360000,
+    "estimated": true,
+    "note": "기본 300,000(6명) + 추가 3명×20,000"
+   },
+   "rooms": {
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "bathroomNote": "욕실 2공간 (같은 공간 중복 계산 안 함)",
+    "living": null,
+    "pyeong": null
+   },
+   "capacity": {
+    "base": 6,
+    "max": 12
    },
    "parking": null,
    "distSea": null,
@@ -99,66 +540,412 @@
    "bbq": true,
    "space": null,
    "pickup": false,
-   "reviewSummary": null,
-   "photos": [],
-   "contact": null,
-   "check": [
-    "정확한 주소",
-    "독채 여부"
-   ],
+   "karaoke": {
+    "name": "힐노래연습장",
+    "km": 4.979
+   },
    "pros": [
-    "숙소 내 노래방",
-    "침실 2 · 욕실 2",
-    "바비큐 가능 (7인 이상 5만원)"
+    "침실 2 · 욕실 2"
    ],
    "cons": [
-    "양양이라 강릉에서 멀음",
-    "황토방은 1박 10만원 별도",
-    "바비큐 비용 별도"
+    "바비큐 기본 적용 인원 미표기 → 9명 총액 문의"
    ],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://booking.naver.com/booking/3/bizes/1509402/items/7104284?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": null,
+   "check": [],
    "sources": [
     {
-     "label": "네이버 예약 (가격)",
-     "url": "https://booking.naver.com/booking/3/bizes/1063902/items/5595320?startDate=2026-11-21&endDate=2026-11-22"
+     "label": "네이버 예약 (가격·객실)",
+     "url": "https://booking.naver.com/booking/3/bizes/1509402/items/7104284?startDate=2026-11-21&endDate=2026-11-22"
     }
    ],
-   "checkedAt": "2026-10-16",
-   "id": "cozy",
-   "name": "양양 코지하우스",
-   "area": "양양군 현남면",
-   "address": null,
-   "price": {
-    "total": 390000,
-    "estimated": true,
-    "note": "기본 290,000(4명) + 추가 5명×20,000"
-   },
-   "capacity": {
-    "base": 4,
-    "max": 12
-   },
-   "url": "https://booking.naver.com/booking/3/bizes/1063902/items/5595320?startDate=2026-11-21&endDate=2026-11-22"
+   "checkedAt": "2026-10-16"
   },
   {
+   "id": "namuhyang",
+   "name": "양양 나무향기펜션 (1층·2층)",
    "source": "ai",
+   "area": "양양군 현북면",
+   "address": "강원특별자치도 양양군 현북면 법수치리 113",
    "type": "mountain",
-   "lat": null,
-   "lng": null,
+   "lat": 37.914200778284474,
+   "lng": 128.62000796446122,
    "status": "ok",
    "oceanView": null,
    "seaNote": null,
    "approx": false,
    "isNew": true,
    "archived": false,
+   "price": {
+    "total": 370000,
+    "estimated": true,
+    "note": "기본 350,000(8명) + 추가 1명×20,000"
+   },
    "rooms": {
-    "bedrooms": 3,
+    "bedrooms": 2,
     "bathrooms": 2,
-    "bathroomNote": "욕실 2공간",
+    "bathroomNote": "욕실 2공간 (같은 공간 중복 계산 안 함)",
     "living": null,
-    "pyeong": 35
+    "pyeong": null
+   },
+   "capacity": {
+    "base": 8,
+    "max": 10
+   },
+   "parking": null,
+   "distSea": 13899,
+   "distStore": 10548,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "detached": null,
+   "bbq": true,
+   "space": null,
+   "pickup": false,
+   "karaoke": {
+    "inside": true
+   },
+   "pros": [
+    "숙소 내 노래방",
+    "침실 2 · 욕실 2"
+   ],
+   "cons": [
+    "예약 전 업체 사전문의 필수",
+    "양양이라 강릉에서 멀음"
+   ],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://booking.naver.com/booking/3/bizes/226985/items/3024493?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": null,
+   "check": [],
+   "sources": [
+    {
+     "label": "네이버 예약 (가격·객실)",
+     "url": "https://booking.naver.com/booking/3/bizes/226985/items/3024493?startDate=2026-11-21&endDate=2026-11-22"
+    }
+   ],
+   "checkedAt": "2026-10-16",
+   "nearestBeach": "잔교해변",
+   "nearestStore": "이마트24 R강릉소금강점",
+   "distBus": 18381,
+   "nearestBus": "주문진공영버스터미널",
+   "distTrain": null,
+   "nearestTrain": null
+  },
+  {
+   "id": "dalsam",
+   "name": "강릉 달을삼킨바다 오션뷰펜션 (별채)",
+   "source": "ai",
+   "area": "강릉시 사천면",
+   "address": "",
+   "type": "sea",
+   "lat": null,
+   "lng": null,
+   "status": "ok",
+   "oceanView": true,
+   "seaNote": null,
+   "approx": false,
+   "isNew": true,
+   "archived": false,
+   "price": {
+    "total": 380000,
+    "estimated": true,
+    "note": "기본 300,000(5명) + 추가 4명×20,000"
+   },
+   "rooms": {
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "bathroomNote": null,
+    "living": null,
+    "pyeong": null
+   },
+   "capacity": {
+    "base": 5,
+    "max": 30
    },
    "parking": null,
    "distSea": null,
    "distStore": null,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "detached": true,
+   "bbq": true,
+   "space": null,
+   "pickup": false,
+   "karaoke": {
+    "name": "힐노래연습장",
+    "km": 3.285
+   },
+   "pros": [
+    "별채 · 침실 4 · 욕실 4",
+    "오션뷰 펜션",
+    "개별 바비큐 (사전예약)"
+   ],
+   "cons": [
+    "주방 취사 범위 안내가 서로 달라 문의 필요",
+    "바비큐 5.5만원 (추가 5명×5천원 포함)"
+   ],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://booking.naver.com/booking/3/bizes/591436/items/4115739?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": null,
+   "check": [],
+   "sources": [
+    {
+     "label": "네이버 예약 (가격·객실)",
+     "url": "https://booking.naver.com/booking/3/bizes/591436/items/4115739?startDate=2026-11-21&endDate=2026-11-22"
+    }
+   ],
+   "checkedAt": "2026-10-16"
+  },
+  {
+   "id": "dungji",
+   "name": "강릉 둥지펜션 (단체/가족실)",
+   "source": "ai",
+   "area": "강릉시 연곡면",
+   "address": "강원특별자치도 강릉시 연곡면 영진리 14-13",
+   "type": "sea",
+   "lat": 37.8698830719231,
+   "lng": 128.8426343224161,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "approx": false,
+   "isNew": true,
+   "archived": false,
+   "price": {
+    "total": 380000,
+    "estimated": true,
+    "note": "기본 300,000(5명) + 추가 4명×20,000"
+   },
+   "rooms": {
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "bathroomNote": "욕실 2공간 (같은 공간 중복 계산 안 함)",
+    "living": null,
+    "pyeong": null
+   },
+   "capacity": {
+    "base": 5,
+    "max": 12
+   },
+   "parking": null,
+   "distSea": 298,
+   "distStore": 62,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "detached": null,
+   "bbq": true,
+   "space": null,
+   "pickup": false,
+   "karaoke": {
+    "name": "가왕노래연습장",
+    "km": 0.331
+   },
+   "pros": [
+    "침실 3 · 욕실 2"
+   ],
+   "cons": [
+    "9명 바비큐 요금 미확인 (4~6인 3만원)"
+   ],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://booking.naver.com/booking/3/bizes/675546/items/4362786?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": null,
+   "check": [],
+   "sources": [
+    {
+     "label": "네이버 예약 (가격·객실)",
+     "url": "https://booking.naver.com/booking/3/bizes/675546/items/4362786?startDate=2026-11-21&endDate=2026-11-22"
+    }
+   ],
+   "checkedAt": "2026-10-16",
+   "nearestBeach": "영진해변",
+   "nearestStore": "CU 연곡부영점",
+   "distBus": 2203,
+   "nearestBus": "주문진공영버스터미널",
+   "distTrain": 12729,
+   "nearestTrain": "강릉역"
+  },
+  {
+   "id": "choldang",
+   "name": "강릉 초당더쉼펜션 (독채)",
+   "source": "ai",
+   "area": "강릉시 초당동",
+   "address": "강원특별자치도 강릉시 초당동 394",
+   "type": "sea",
+   "lat": 37.7924397462272,
+   "lng": 128.911148108423,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "approx": false,
+   "isNew": true,
+   "archived": false,
+   "price": {
+    "total": 390000,
+    "estimated": true,
+    "note": "기본 330,000(6명) + 추가 3명×20,000"
+   },
+   "rooms": {
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "bathroomNote": "욕실 2공간 (같은 공간 중복 계산 안 함)",
+    "living": null,
+    "pyeong": null
+   },
+   "capacity": {
+    "base": 6,
+    "max": 11
+   },
+   "parking": null,
+   "distSea": 754,
+   "distStore": 402,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "detached": true,
+   "bbq": true,
+   "space": null,
+   "pickup": false,
+   "karaoke": {
+    "name": "보스노래연습장",
+    "km": 0.775
+   },
+   "pros": [
+    "독채 · 침실 3 · 욕실 2",
+    "백탄 참숯·대형 그릴 (4만원)"
+   ],
+   "cons": [],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://booking.naver.com/booking/3/bizes/1110684/items/5760664?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": null,
+   "check": [],
+   "sources": [
+    {
+     "label": "네이버 예약 (가격·객실)",
+     "url": "https://booking.naver.com/booking/3/bizes/1110684/items/5760664?startDate=2026-11-21&endDate=2026-11-22"
+    }
+   ],
+   "checkedAt": "2026-10-16",
+   "nearestBeach": "강문해변",
+   "nearestStore": "세븐일레븐 강릉제이나인점",
+   "distBus": 5021,
+   "nearestBus": "강릉고속버스터미널",
+   "distTrain": 3261,
+   "nearestTrain": "강릉역"
+  },
+  {
+   "id": "cozy",
+   "name": "양양 코지하우스",
+   "source": "ai",
+   "area": "양양군 현남면",
+   "address": "강원특별자치도 양양군 현남면 북분리 78",
+   "type": "sea",
+   "lat": 37.9819321933638,
+   "lng": 128.739195028125,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "approx": false,
+   "isNew": true,
+   "archived": false,
+   "price": {
+    "total": 390000,
+    "estimated": true,
+    "note": "기본 290,000(4명) + 추가 5명×20,000"
+   },
+   "rooms": {
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "bathroomNote": "욕실 2공간 (같은 공간 중복 계산 안 함)",
+    "living": null,
+    "pyeong": null
+   },
+   "capacity": {
+    "base": 4,
+    "max": 12
+   },
+   "parking": null,
+   "distSea": 1090,
+   "distStore": 1580,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "detached": null,
+   "bbq": true,
+   "space": null,
+   "pickup": false,
+   "karaoke": {
+    "inside": true
+   },
+   "pros": [
+    "숙소 내 노래방",
+    "침실 2 · 욕실 2",
+    "바비큐 7인 이상 5만원"
+   ],
+   "cons": [
+    "황토방은 1박 10만원 별도",
+    "양양이라 강릉에서 멀음"
+   ],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://booking.naver.com/booking/3/bizes/1063902/items/5595320?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": null,
+   "check": [],
+   "sources": [
+    {
+     "label": "네이버 예약 (가격·객실)",
+     "url": "https://booking.naver.com/booking/3/bizes/1063902/items/5595320?startDate=2026-11-21&endDate=2026-11-22"
+    }
+   ],
+   "checkedAt": "2026-10-16",
+   "nearestBeach": "북분리해수욕장",
+   "nearestStore": "CU 양양동산해변점",
+   "distBus": 13227,
+   "nearestBus": "주문진공영버스터미널",
+   "distTrain": null,
+   "nearestTrain": null
+  },
+  {
+   "id": "sweethill",
+   "name": "평창 스위트힐펜션 (1단지 35평)",
+   "source": "ai",
+   "area": "평창군 대관령면",
+   "address": "강원특별자치도 평창군 대관령면 횡계리 590-2",
+   "type": "mountain",
+   "lat": 37.680643265986866,
+   "lng": 128.69859796282717,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "approx": false,
+   "isNew": true,
+   "archived": false,
+   "price": {
+    "total": 400000,
+    "estimated": true,
+    "note": "각 객실 기본 380,000(7명) + 추가 2명×10,000 · A·B·C 3객실 동일"
+   },
+   "rooms": {
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "bathroomNote": "욕실 2공간 (같은 공간 중복 계산 안 함)",
+    "living": null,
+    "pyeong": 35
+   },
+   "capacity": {
+    "base": 7,
+    "max": 10
+   },
+   "parking": null,
+   "distSea": null,
+   "distStore": 117,
    "checkin": null,
    "checkout": null,
    "heating": "온돌",
@@ -166,38 +953,44 @@
    "bbq": true,
    "space": null,
    "pickup": false,
-   "reviewSummary": null,
-   "photos": [],
-   "contact": null,
-   "check": [
-    "정확한 주소",
-    "독채 여부"
-   ],
+   "karaoke": {
+    "name": "앵콜노래연습장",
+    "km": 1.114
+   },
    "pros": [
     "침실 3 · 욕실 2 · 35평 온돌",
-    "같은 객실이 3개라 선택지 많음 (A·B·C)",
+    "A·B·C 동일 객실 3개",
     "바비큐통 무료"
    ],
    "cons": [
-    "대관령이라 강릉에서 멀음",
-    "숯·철망은 직접 준비, 사전예약"
+    "숯·철망 직접 준비, 사전예약",
+    "평창이라 강릉에서 멀음"
    ],
-   "sources": [],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://booking.naver.com/booking/3/bizes/1544934/items/7224137?startDate=2026-11-21&endDate=2026-11-22",
+   "contact": null,
+   "check": [],
+   "sources": [
+    {
+     "label": "네이버 예약 (가격·객실)",
+     "url": "https://booking.naver.com/booking/3/bizes/1544934/items/7224137?startDate=2026-11-21&endDate=2026-11-22"
+    },
+    {
+     "label": "네이버 예약 B",
+     "url": "https://booking.naver.com/booking/3/bizes/1544934/items/7224138?startDate=2026-11-21&endDate=2026-11-22"
+    },
+    {
+     "label": "네이버 예약 C",
+     "url": "https://booking.naver.com/booking/3/bizes/1544934/items/7224139?startDate=2026-11-21&endDate=2026-11-22"
+    }
+   ],
    "checkedAt": "2026-10-16",
-   "id": "sweethill",
-   "name": "평창 스위트힐펜션 (1단지 35평)",
-   "area": "평창군 대관령",
-   "address": null,
-   "price": {
-    "total": 400000,
-    "estimated": true,
-    "note": "기본 380,000(7명) + 추가 2명×10,000 · A·B·C 3객실 동일"
-   },
-   "capacity": {
-    "base": 7,
-    "max": 10
-   },
-   "url": ""
+   "nearestStore": "CU 대관령IC점",
+   "distBus": 1004,
+   "nearestBus": "횡계시외버스터미널",
+   "distTrain": 11733,
+   "nearestTrain": "진부(오대산)역"
   },
   {
    "id": "joyful",
@@ -205,7 +998,7 @@
    "source": "search",
    "area": "강릉시 강동면 정동3길 32-2",
    "address": "강원 강릉시 강동면 정동3길 32-2",
-   "type": null,
+   "type": "sea",
    "lat": 37.6864279371309,
    "lng": 129.034942945308,
    "status": "ok",
@@ -980,6 +1773,14 @@
     {
      "label": "네이버 지도 (위치·후기)",
      "url": "https://naver.me/F6lgED6n"
+    },
+    {
+     "label": "네이버 예약 301호",
+     "url": "https://booking.naver.com/booking/3/bizes/586429/items/4100309?startDate=2026-11-21&endDate=2026-11-22"
+    },
+    {
+     "label": "네이버 예약 501호",
+     "url": "https://booking.naver.com/booking/3/bizes/586429/items/4100311?startDate=2026-11-21&endDate=2026-11-22"
     }
    ],
    "checkedAt": "2026-10-15",
@@ -992,7 +1793,11 @@
    "bbq": true,
    "space": true,
    "pickup": false,
-   "archived": false
+   "archived": false,
+   "karaoke": {
+    "name": "해변노래연습장",
+    "km": 0.573
+   }
   },
   {
    "source": "search",
@@ -1399,7 +2204,7 @@
    "name": "여긴어디 강릉사기막",
    "source": "ai",
    "area": "강릉 사천면 사기막",
-   "type": null,
+   "type": "mountain",
    "lat": 37.7742635041047,
    "lng": 128.767672936402,
    "status": "unavailable",
@@ -1464,7 +2269,7 @@
    "name": "강릉 휴가스테이",
    "source": "ai",
    "area": "강릉시 안현로 167-57",
-   "type": null,
+   "type": "sea",
    "lat": 37.8054706735281,
    "lng": 128.876575520956,
    "status": "unavailable",

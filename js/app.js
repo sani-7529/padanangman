@@ -46,11 +46,13 @@ function criteria(s) {
 }
 function isBest(s) {
   if (s.status !== 'ok' || s.archived) return false;
-  const v = criteria(s).map((x) => x[1]);
-  return !v.includes(false) && v.filter((x) => x === true).length >= 3;
+  const c = Object.fromEntries(criteria(s));
+  // 독채·바비큐·역/터미널은 확인된 ✓ 필수, 나머지는 ✕만 아니면 통과
+  return !Object.values(c).includes(false) && c['독채'] === true && c['바비큐'] === true && c['역·터미널'] === true;
 }
 const bestBadge = (s) => (isBest(s) ? '<span class="badge b-best">THE BEST</span>' : '');
 const capText = (s) => (s.capacity && s.capacity.max != null ? `${s.capacity.base}~${s.capacity.max}명` : null);
+const karaText = (s) => (!s.karaoke ? null : s.karaoke.inside ? '숙소 내 노래방' : `${s.karaoke.name} ${s.karaoke.km}km (직선)`);
 const seaText = (s) => meters(s.distSea);
 const typeLabel = (t) => (t === 'sea' ? '바다' : t === 'mountain' ? '산' : '–');
 const typeBadge = (s) => (s.type ? `<span class="badge ${s.type === 'sea' ? 'b-sea' : 'b-mtn'}">${typeLabel(s.type)}</span>` : '');
@@ -189,6 +191,7 @@ function openSheet(id) {
       ${g('인원', s.capacity && s.capacity.max != null ? `기준 ${s.capacity.base} · 최대 ${s.capacity.max}` : null)}
       ${g('바다까지', seaText(s))}
       ${g('편의점', meters(s.distStore))}
+      ${g('노래방', karaText(s))}
       ${g('버스터미널', transit(s.distBus, s.nearestBus))}
       ${g('기차역', transit(s.distTrain, s.nearestTrain))}
       ${g('주차', s.parking)}
@@ -231,6 +234,7 @@ function renderCompare() {
     ['화장실', (s) => q(s.rooms.bathrooms, undefined, true)],
     ['공용공간', (s) => q(s.rooms.living, (x) => (x ? '있음' : '없음'), true)],
     ['인원', (s) => q(capText(s))],
+    ['노래방', (s) => q(karaText(s))],
     ['버스터미널', (s) => q(transit(s.distBus, s.nearestBus))],
     ['기차역', (s) => q(transit(s.distTrain, s.nearestTrain))],
     ['주차', (s) => q(s.parking)],
