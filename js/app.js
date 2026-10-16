@@ -51,7 +51,7 @@ function isBest(s) {
 const bestBadge = (s) => (isBest(s) ? '<span class="badge b-best">THE BEST</span>' : '');
 const seaText = (s) => meters(s.distSea);
 const typeLabel = (t) => (t === 'sea' ? '바다' : t === 'mountain' ? '산' : '위치 확인 필요');
-const typeBadge = (s) => `<span class="badge ${s.type === 'sea' ? 'b-sea' : s.type === 'mountain' ? 'b-mtn' : 'b-unk'}">${typeLabel(s.type)}</span>`;
+const typeBadge = (s) => (s.type ? `<span class="badge ${s.type === 'sea' ? 'b-sea' : 'b-mtn'}">${typeLabel(s.type)}</span>` : '');
 const newBadge = (s) => (s.isNew ? '<span class="badge b-new">NEW</span>' : '');
 const oceanBadge = (s) => (s.oceanView ? '<span class="badge b-ocean">오션뷰</span>' : '');
 const archBadge = (s) => (s.archived ? '<span class="badge b-bad" style="background:#eee;color:#666">보관함</span>' : '');
@@ -119,7 +119,7 @@ const cmpBtn = (s) => `<button class="cmp ${state.compare.includes(s.id) ? 'on' 
 
 function facts(s) {
   const r = s.rooms || {};
-  const f = (label, v) => `<span class="f ${v == null ? 'q' : ''}">${label} ${v == null ? '확인 필요' : esc(v)}</span>`;
+  const f = (label, v) => `<span class="f ${v == null ? 'need' : ''}">${label} ${v == null ? '확인 필요' : esc(v)}</span>`;
   return [
     f('방', r.bedrooms),
     f('화장실', r.bathrooms),
@@ -168,7 +168,8 @@ function openSheet(id) {
   const s = state.stays.find((x) => x.id === id);
   if (!s) return;
   const r = s.rooms || {};
-  const g = (label, v) => `<div class="g ${v == null ? 'q' : ''}"><span>${label}</span><b>${v == null ? '확인 필요' : esc(v)}</b></div>`;
+  // 중요한 항목(침실·화장실·공용공간)만 '확인 필요'를 강조, 나머지는 '–'
+  const g = (label, v, imp) => `<div class="g ${v == null ? (imp ? 'need' : 'q') : ''}"><span>${label}</span><b>${v == null ? (imp ? '확인 필요' : '–') : esc(v)}</b></div>`;
   const pp = perPerson(s);
   const li = (a) => a.map((x) => `<li>${esc(x)}</li>`).join('');
   $('#sheet').innerHTML = `
@@ -181,9 +182,9 @@ function openSheet(id) {
     </div>
     ${s.statusNote ? `<div class="alert">${esc(s.statusNote)}</div>` : ''}
     <div class="grid">
-      ${g('침실', r.bedrooms)}
-      ${g('화장실', r.bathrooms)}
-      ${g('거실/공용공간', r.living == null ? null : r.living ? '있음' : '없음')}
+      ${g('침실', r.bedrooms, true)}
+      ${g('화장실', r.bathrooms, true)}
+      ${g('거실/공용공간', r.living == null ? null : r.living ? '있음' : '없음', true)}
       ${g('인원', `기준 ${s.capacity.base} · 최대 ${s.capacity.max}`)}
       ${g('바다까지', seaText(s))}
       ${g('편의점', meters(s.distStore))}
@@ -216,7 +217,7 @@ function renderCompare() {
   const items = state.compare.map((id) => state.stays.find((s) => s.id === id)).filter(Boolean);
   $('#cmpCount').textContent = items.length ? `(${items.length})` : '';
   if (!items.length) { $('#view-compare').innerHTML = '<div class="empty">목록에서 “+ 비교”를 눌러 2~4개를 골라 보세요</div>'; return; }
-  const q = (v, fmt = (x) => x) => (v == null ? '<span class="q">확인 필요</span>' : esc(fmt(v)));
+  const q = (v, fmt = (x) => x, imp) => (v == null ? (imp ? '<span class="need-t">확인 필요</span>' : '<span class="q">–</span>') : esc(fmt(v)));
   const rows = [
     ['', (s) => `<b>${esc(s.name)}</b><br>${typeBadge(s)} ${badBadge(s)}`],
     ['1인', (s) => q(perPerson(s), won)],
@@ -225,9 +226,9 @@ function renderCompare() {
     ['바다까지', (s) => q(seaText(s))],
     ['오션뷰', (s) => (s.oceanView == null ? q(null) : s.oceanView ? '있음' : '없음')],
     ['편의점', (s) => q(meters(s.distStore))],
-    ['침실', (s) => q(s.rooms.bedrooms)],
-    ['화장실', (s) => q(s.rooms.bathrooms)],
-    ['공용공간', (s) => q(s.rooms.living, (x) => (x ? '있음' : '없음'))],
+    ['침실', (s) => q(s.rooms.bedrooms, undefined, true)],
+    ['화장실', (s) => q(s.rooms.bathrooms, undefined, true)],
+    ['공용공간', (s) => q(s.rooms.living, (x) => (x ? '있음' : '없음'), true)],
     ['인원', (s) => `${s.capacity.base}~${s.capacity.max}명`],
     ['버스터미널', (s) => q(transit(s.distBus, s.nearestBus))],
     ['기차역', (s) => q(transit(s.distTrain, s.nearestTrain))],

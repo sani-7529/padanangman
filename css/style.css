@@ -101,3 +101,7 @@ main{flex:1;min-height:0;position:relative;overflow:auto}
 .crit{display:flex;flex-wrap:wrap;gap:6px}
 .cr{font-size:12px;padding:5px 10px;border-radius:99px;background:var(--soft)}
 .cr.ok{background:#e6f6ec;color:#15803d}.cr.no{background:#fee;color:#c0392b}.cr.q{color:var(--mute)}
+
+.f.need{background:#fff4e0;color:#b45309;border:1px solid #fbd9a5;font-weight:600}
+.g.need{background:#fff4e0;border:1px solid #fbd9a5}.g.need b{color:#b45309;font-weight:700}
+.need-t{color:#b45309;font-weight:700}
