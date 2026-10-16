@@ -337,7 +337,7 @@ function actCard(a) {
     <div class="crow"><div><div class="cname">${esc(a.name)}</div><div class="carea">${esc(a.area)}</div></div></div>
     <div class="facts" style="margin-top:8px">${(a.tags || []).map((t) => `<span class="f">${esc(t)}</span>`).join('')}</div>
     <p class="adesc">${esc(a.summary)}</p>
-    <div class="facts"><span class="f">🕘 ${esc(a.hours.split(' (')[0])}</span></div>
+    <div class="facts"><span class="f">🕘 ${esc(a.hours.split(' (')[0].split(' ·')[0])}</span></div>
   </div></article>`;
 }
 function renderActivity() {
@@ -362,16 +362,16 @@ function openAct(id) {
       <div class="g"><span>운영시간</span><b>${esc(a.hours)}</b></div>
       <div class="g"><span>휴무</span><b>${esc(a.closed)}</b></div>
       ${a.entry ? `<div class="g"><span>${esc(a.entry.label)}</span><b>${esc(a.entry.price)}</b></div>` : ''}
-      <div class="g"><span>문의</span><b><a href="tel:${esc(a.phone)}">${esc(a.phone)}</a></b></div>
+      ${a.phone ? `<div class="g"><span>문의</span><b><a href="tel:${esc(a.phone)}">${esc(a.phone)}</a></b></div>` : ''}
     </div>
-    <div class="sec"><h3>종류 · 요금 (1회권) · 9명 합계</h3>
-      <div class="cmpwrap" style="padding:0"><table class="acttbl"><tr><th>체험</th><th>1인</th><th>9명</th><th>제한</th></tr>${rows}</table></div></div>
+    ${a.items.length ? `<div class="sec"><h3>종류 · 요금 (1회권) · 9명 합계</h3>
+      <div class="cmpwrap" style="padding:0"><table class="acttbl"><tr><th>체험</th><th>1인</th><th>9명</th><th>제한</th></tr>${rows}</table></div></div>` : ''}
     ${a.packages?.length ? `<div class="sec"><h3>패키지 · 참고</h3><ul class="pl">${li(a.packages)}</ul></div>` : ''}
     ${a.extra?.length ? `<div class="sec"><h3>알아두면 좋아요</h3><ul class="pl">${li(a.extra)}</ul></div>` : ''}
     ${a.check?.length ? `<div class="sec"><h3>확인할 것</h3><ul class="ck">${li(a.check)}</ul></div>` : ''}
     ${near.length ? `<div class="sec"><h3>가까운 숙소 (직선거리)</h3><ul class="near">${near.map((n) => `<li><a href="#" data-open="${n.s.id}">${esc(n.s.name)}</a><span>${n.d.toFixed(1)}km</span></li>`).join('')}</ul></div>` : ''}
     ${sources(a)}
-    <div class="actions"><a class="btn" href="${esc(a.sources[0].url)}" target="_blank" rel="noopener">공식 정보 보기</a><a class="btn ghost" href="tel:${esc(a.phone)}">전화</a></div>`;
+    <div class="actions"><a class="btn" href="${esc(a.sources[0].url)}" target="_blank" rel="noopener">${a.phone ? '공식 정보 보기' : '지도에서 보기'}</a>${a.phone ? `<a class="btn ghost" href="tel:${esc(a.phone)}">전화</a>` : ''}</div>`;
   $('#sheet').dataset.id = ''; $('#sheet').hidden = false; $('#sheetBg').hidden = false;
 }
 
