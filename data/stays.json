@@ -5,6 +5,63 @@
  },
  "stays": [
   {
+   "id": "joyful",
+   "name": "강릉 조이풀펜션",
+   "source": "search",
+   "area": "강릉시 강동면 정동3길 32-2",
+   "address": "강원 강릉시 강동면 정동3길 32-2",
+   "type": null,
+   "lat": null,
+   "lng": null,
+   "status": "ok",
+   "oceanView": null,
+   "seaNote": null,
+   "approx": false,
+   "isNew": true,
+   "archived": false,
+   "price": {
+    "total": null,
+    "note": null
+   },
+   "rooms": {
+    "bedrooms": null,
+    "bathrooms": null,
+    "bathroomNote": null,
+    "living": null,
+    "pyeong": null
+   },
+   "capacity": {
+    "base": null,
+    "max": null
+   },
+   "parking": null,
+   "distSea": null,
+   "distStore": null,
+   "checkin": null,
+   "checkout": null,
+   "heating": null,
+   "detached": null,
+   "bbq": null,
+   "space": null,
+   "pickup": false,
+   "pros": [],
+   "cons": [],
+   "reviewSummary": null,
+   "photos": [],
+   "url": "https://naver.me/5YFd558Q",
+   "contact": null,
+   "check": [
+    "가격·방·화장실·인원 (네이버 예약 페이지 정보 필요)"
+   ],
+   "sources": [
+    {
+     "label": "네이버 지도",
+     "url": "https://naver.me/5YFd558Q"
+    }
+   ],
+   "checkedAt": "2026-10-16"
+  },
+  {
    "id": "aejinsim",
    "name": "강릉 애진심펜션 (1층 독채)",
    "source": "search",
