@@ -41,7 +41,8 @@ function auto(s) {
 function criteria(s) {
   const d = [s.distBus, s.distTrain].filter((x) => x != null);
   const transit = s.pickup ? true : d.length ? Math.min(...d) <= 5000 : null;
-  return [['독채', s.detached], ['바비큐', s.bbq], ['다 같이 쓸 공간', s.space], ['역·터미널', transit]];
+  const wc = s.rooms && s.rooms.bathrooms != null ? s.rooms.bathrooms >= 2 : null; // 화장실 1개면 탈락
+  return [['독채', s.detached], ['바비큐', s.bbq], ['다 같이 쓸 공간', s.space], ['역·터미널', transit], ['화장실 2개 이상', wc]];
 }
 function isBest(s) {
   if (s.status !== 'ok' || s.archived) return false;
