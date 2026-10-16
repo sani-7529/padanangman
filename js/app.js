@@ -7,7 +7,7 @@ const man = (n) => (n / 10000).toFixed(1).replace(/\.0$/, '') + '만';
 
 const state = window.__app = {
   stays: [], trip: {}, tab: 'map',
-  source: 'all', type: 'all', hideBad: false, ocean: false,
+  source: 'all', type: 'all', showArch: false, ocean: false,
   compare: [], hearts: {}, name: null, sb: null,
   map: null, overlays: [], acts: [], showAct: true,
 };
@@ -54,6 +54,7 @@ const typeLabel = (t) => (t === 'sea' ? '바다' : t === 'mountain' ? '산' : '�
 const typeBadge = (s) => `<span class="badge ${s.type === 'sea' ? 'b-sea' : s.type === 'mountain' ? 'b-mtn' : 'b-unk'}">${typeLabel(s.type)}</span>`;
 const newBadge = (s) => (s.isNew ? '<span class="badge b-new">NEW</span>' : '');
 const oceanBadge = (s) => (s.oceanView ? '<span class="badge b-ocean">오션뷰</span>' : '');
+const archBadge = (s) => (s.archived ? '<span class="badge b-bad" style="background:#eee;color:#666">보관함</span>' : '');
 const badBadge = (s) => (isBad(s) ? `<span class="badge b-bad">${s.status === 'unavailable' ? '예약 불가' : '조건 미달'}</span>` : '');
 
 function visible() {
@@ -61,7 +62,7 @@ function visible() {
     (state.source === 'all' || (state.source === 'new' ? s.isNew : state.source === 'best' ? isBest(s) : s.source === state.source)) &&
     (state.type === 'all' || s.type === state.type) &&
     (!state.ocean || s.oceanView === true) &&
-    !(state.hideBad && isBad(s)));
+    (state.showArch || !s.archived));
 }
 
 /* ---------- data / hearts ---------- */
@@ -150,7 +151,7 @@ function card(s) {
     ${thumb(s)}
     <div class="cbody" data-open="${s.id}">
       <div class="crow"><div><div class="cname">${esc(s.name)}</div><div class="carea">${esc(s.area)}</div></div>
-      <div style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end">${bestBadge(s)}${newBadge(s)}${typeBadge(s)}${oceanBadge(s)}${badBadge(s)}</div></div>
+      <div style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end">${archBadge(s)}${bestBadge(s)}${newBadge(s)}${typeBadge(s)}${oceanBadge(s)}${badBadge(s)}</div></div>
       ${priceHtml(s)}
       <div class="facts">${facts(s)}</div>
     </div>
@@ -322,7 +323,7 @@ const km = (a, b) => {
 };
 function nearStays(a) {
   if (a.lat == null) return [];
-  return state.stays.filter((s) => s.lat != null && s.status === 'ok')
+  return state.stays.filter((s) => s.lat != null && s.status === 'ok' && !s.archived)
     .map((s) => ({ s, d: km(a, s) })).sort((x, y) => x.d - y.d);
 }
 function actCard(a) {
@@ -399,7 +400,7 @@ document.addEventListener('click', (e) => {
 $('#sheetBg').onclick = closeSheet;
 $('#showAct').onchange = (e) => { state.showAct = e.target.checked; render(); };
 $('#ocean').onchange = (e) => { state.ocean = e.target.checked; render(); };
-$('#hideBad').onchange = (e) => { state.hideBad = e.target.checked; render(); };
+$('#showArch').onchange = (e) => { state.showArch = e.target.checked; render(); };
 
 (async () => {
   const h = location.hash.slice(1);

@@ -83,7 +83,8 @@
    "detached": true,
    "bbq": true,
    "space": true,
-   "pickup": false
+   "pickup": false,
+   "archived": false
   },
   {
    "source": "search",
@@ -160,7 +161,8 @@
    "detached": true,
    "bbq": true,
    "space": true,
-   "pickup": false
+   "pickup": false,
+   "archived": false
   },
   {
    "source": "search",
@@ -237,7 +239,8 @@
    "detached": null,
    "bbq": true,
    "space": null,
-   "pickup": false
+   "pickup": false,
+   "archived": false
   },
   {
    "source": "search",
@@ -313,7 +316,8 @@
    "detached": null,
    "bbq": true,
    "space": true,
-   "pickup": true
+   "pickup": true,
+   "archived": false
   },
   {
    "source": "search",
@@ -389,7 +393,8 @@
    "detached": true,
    "bbq": true,
    "space": null,
-   "pickup": false
+   "pickup": false,
+   "archived": false
   },
   {
    "source": "search",
@@ -466,7 +471,8 @@
    "detached": true,
    "bbq": false,
    "space": null,
-   "pickup": false
+   "pickup": false,
+   "archived": true
   },
   {
    "source": "search",
@@ -549,7 +555,8 @@
    "detached": true,
    "bbq": true,
    "space": true,
-   "pickup": false
+   "pickup": false,
+   "archived": true
   },
   {
    "source": "search",
@@ -629,7 +636,8 @@
    "detached": false,
    "bbq": true,
    "space": true,
-   "pickup": false
+   "pickup": false,
+   "archived": false
   },
   {
    "source": "search",
@@ -714,7 +722,8 @@
    "detached": null,
    "bbq": true,
    "space": true,
-   "pickup": false
+   "pickup": false,
+   "archived": true
   },
   {
    "source": "search",
@@ -794,7 +803,8 @@
    "detached": true,
    "bbq": true,
    "space": null,
-   "pickup": false
+   "pickup": false,
+   "archived": false
   },
   {
    "id": "sunstay",
@@ -878,7 +888,8 @@
    "detached": true,
    "bbq": true,
    "space": null,
-   "pickup": false
+   "pickup": false,
+   "archived": false
   },
   {
    "id": "buyeon-c",
@@ -955,7 +966,8 @@
    "detached": true,
    "bbq": true,
    "space": null,
-   "pickup": false
+   "pickup": false,
+   "archived": true
   },
   {
    "id": "buyeon-b",
@@ -1024,7 +1036,8 @@
    "detached": true,
    "bbq": true,
    "space": null,
-   "pickup": false
+   "pickup": false,
+   "archived": true
   },
   {
    "id": "sagimak",
@@ -1088,7 +1101,8 @@
    "detached": true,
    "bbq": true,
    "space": true,
-   "pickup": false
+   "pickup": false,
+   "archived": true
   },
   {
    "id": "hyuga",
@@ -1156,7 +1170,8 @@
    "detached": true,
    "bbq": true,
    "space": null,
-   "pickup": false
+   "pickup": false,
+   "archived": true
   }
  ]
 }
